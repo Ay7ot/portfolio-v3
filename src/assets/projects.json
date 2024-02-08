@@ -1,0 +1,62 @@
+[
+    {
+        "name": "ResuMate",
+        "type": "Web App",
+        "sector": "Productivity",
+        "description": "A comprehensive resume templating web application that empowers users to create polished and professional resumes effortlessly.",
+        "github": "https://github.com/Ay7ot/resumate",
+        "live": "https://resumate-io.web.app/",
+        "deskimg": "/resumate-desktop.png",
+        "mobileimg": "/resumate-mobile.PNG"
+    },
+    {
+        "name": "Musica",
+        "type": "Web App",
+        "sector": "Music",
+        "description": "A music web app built with SpotifyAPI. Users can sign in with their spotify account, search for an artist and play songs from the artist. Built to practice handling api calls and advanced React.",
+        "github": "https://github.com/Ay7ot/musica-typescript",
+        "live": "https://dot-musica.netlify.app/",
+        "deskimg": "/musica-desktop.png",
+        "mobileimg": "/musica-mobile.PNG"
+    },
+    {
+        "name": "Pet Grooming",
+        "type": "Marketing",
+        "sector": "Vetinary",
+        "description": "A simple website built for a pet grooming company optimized for calls and emails.",
+        "github": "https://github.com/Ay7ot/dogGrooming/",
+        "live": "https://pet-groomer.netlify.app/",
+        "deskimg": "/pet-groomer-desktop.png",
+        "mobileimg": "/pet-groomer-mobile.PNG"
+    },
+    {
+        "name": "Movie Pitch",
+        "type": "Web App",
+        "sector": "AI",
+        "description": "A simple AI web app done with openaiAPI. Users would input a single sentence for a movie and they would get back a movie title, synopsis, actors and even a poster.",
+        "github": "https://github.com/Ay7ot/moviePitch/",
+        "live": "https://movie-synopsis.netlify.app/",
+        "deskimg": "/moviePitch-desktop.jpg",
+        "mobileimg": "/moviePitch-mobile.PNG"
+    },
+    {
+        "name": "Quizzical",
+        "type": "Web App",
+        "sector": "Education",
+        "description": "A simple quiz web app where users can play fun quizzes from different categories.",
+        "github": "https://spandors-trivia.netlify.app/",
+        "live": "https://spandors-trivia.netlify.app/",
+        "deskimg": "/quizzical-desktop.png",
+        "mobileimg": "/quizzical-mobile.PNG"
+    },
+    {
+        "name": "BookWormz",
+        "type": "Web App",
+        "sector": "Education",
+        "description": "An open book library where users can search for books, read books, download and download them.",
+        "github": "https://github.com/Ay7ot/bookwormz/",
+        "live": "https://bookwormz.netlify.app/",
+        "deskimg": "/bookWormz-desktop.png",
+        "mobileimg": "/bookwormz-mobile.PNG"
+    }
+]

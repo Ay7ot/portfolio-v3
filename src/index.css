@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: geist;
+  src: url(./assets/fonts/GeistVariableVF.ttf);
+}
+
+.logo_style {
+  border-radius: 8px;
+  border: 1px solid #eceef4;
+  background: linear-gradient(180deg, #d7d7e4 -6.25%, #f9f9fb 100%);
+  box-shadow: 0px 0px 0px 1px #f6f6f9;
+}
+
+body {
+  font-family: geist;
+}
+
+.nav_button {
+  display: flex;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #72bcfd;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(9, 103, 188, 0.2) 71.35%),
+    #0067c2;
+  box-shadow: 0px 0px 0px 1px #0256a2;
+}
+
+@media screen and (max-width: 320px) {
+  .nav_button {
+    padding: 4px 8px;
+  }
+
+  .nav_button p {
+    font-size: 0.65rem;
+  }
+}
+
+.nav_border {
+  border-radius: 16px;
+  border: 1px solid var(--Gray-cool-200, #dcdfea);
+  background: #fff;
+}
+
+.header_background {
+  border-radius: 28px;
+  border: 1px solid var(--Gray-cool-200, #dcdfea);
+  background: var(--Gray-cool-50, #f9f9fb);
+}
+
+.project_images:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.tab-mid-border {
+  background: linear-gradient(
+    rgba(220, 223, 234, 0),
+    rgba(125, 137, 176, 1),
+    rgba(220, 223, 234, 0)
+  );
+}
+
+.dynamicHeight {
+  min-height: 100vh;
+}
+
+@supports (height: 100dvh) {
+  .dynamicHeight {
+    min-height: 100dvh;
+  }
+}
