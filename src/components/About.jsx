@@ -1,7 +1,7 @@
 
 export default function About() {
     return (
-        <section className='pt-[2rem] pb-[6rem] md:pt-[4rem] md:pb-[8rem] w-full max-w-[1024px]'>
+        <section className='pt-[2rem] pb-[6rem] md:pt-[4rem] md:pb-[8rem] w-full max-w-[1024px]' id="about">
             <div className=" flex md:flex-row flex-col gap-4 md:gap-16 items-center w-full">
                 <div className="self-start relative">
                     <div className="w-[200px] min-[380px]:w-[280px] border-[#DCDFEA] border-[1px] rounded-[1.25rem]">

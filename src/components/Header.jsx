@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 
 export default function Header() {
     return (
-        <div className="header_background p-3 pb-12 w-full max-w-[1024px]">
+        <div className="header_background p-3 pb-12 w-full max-w-[1024px]" id="home">
             <Navbar />
             <div className="mt-32 md:mt-[252px] sm:px-12 md:px-24">
                 <div className="flex">

@@ -16,13 +16,14 @@ export default function Projects() {
         setProjects(projectsData.slice(0, 3))
     }
 
+
     return (
-        <section className='pt-[4rem] md:pt-[8rem] w-full max-w-[1024px]'>
+        <section className='pt-[4rem] md:pt-[8rem] w-full max-w-[1024px]' id='projects'>
             <h2 className='text-[#111322] text-center relative font-semibold leading-[2.375rem] text-[1.875rem] md:text-[2.75rem] lg:text-[3.75rem]'>
                 Selected Projects
                 <span className='text-base absolute top-[-8px] mt-[-0.5rem] max-[500px]:right-0 font-normal font-shadows lg:text-[1.75rem] md:tracking-[-1.2px]'>From 2021 till now</span>
             </h2>
-            <div className='flex flex-col gap-8 md:gap-16 mt-8 md:mt-16'>
+            <div className='flex flex-col gap-8 md:gap-16 mt-8 md:mt-16' >
                 {projects.map((project, index) => {
                     return (
                         <div key={index} className={`flex flex-col gap-3 md:gap-8 md:flex-row-reverse md:justify-end`}>
@@ -48,7 +49,7 @@ export default function Projects() {
                                 </div>
                                 <div className='mt-auto flex flex-col gap-4 w-full'>
                                     <a href={project.github} className=' px-4 py-[10px] flex items-center justify-between w-full'>
-                                        <p className='text-[#5D6B98] text-sm font-medium leading-[1.25rem]'>View Code</p>
+                                        <p className='text-[#5D6B98] text-sm font-medium leading-[1.25rem]'>View Site</p>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                             <path d="M5.83301 14.1663L14.1663 5.83301M14.1663 5.83301H5.83301M14.1663 5.83301V14.1663" stroke="#7D89B0" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
@@ -64,12 +65,9 @@ export default function Projects() {
                         </div>
                     )
                 })}
-                <button onClick={showMore ? showLessProjects : showMoreProjects} className='border-[#B9C0D4] border-[1px] px-4 py-[10px] rounded-lg flex items-center justify-between w-full'>
+                <button onClick={showMore ? showLessProjects : showMoreProjects} className='border-[#B9C0D4] border-[1px] px-4 py-[10px] rounded-lg hover:bg-[#F9F9FB] transition-all duration-300 ease-linear origin-left flex items-center justify-between w-full'>
                     <p className='text-[#5D6B98] text-sm font-medium leading-[1.25rem]'>{`Show ${showMore ? 'less' : 'more'} projects`}</p>
-                    <svg xmlns="http://www.w3.org/
-                    
-                    
-                    2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M12 5V19M5 12H19" stroke="#7D89B0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </button>
