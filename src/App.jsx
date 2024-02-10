@@ -6,7 +6,7 @@ import TabBar from "./components/TabBar";
 export default function App() {
   return (
     <div className="flex flex-col items-center dynamicHeight">
-      <div className="flex flex-col items-center w-full p-3 sm:p-6 ">
+      <div className="flex flex-col items-center w-full p-3 sm:p-6 " id="home">
         <Header />
       </div>
       <div className="flex flex-col items-center w-full p-3 sm:p-6 ">

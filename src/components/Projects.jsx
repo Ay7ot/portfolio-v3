@@ -18,12 +18,12 @@ export default function Projects() {
 
 
     return (
-        <section className='pt-[4rem] md:pt-[8rem] w-full max-w-[1024px]' id='projects'>
+        <section className='pt-[4rem] md:pt-[8rem] w-full max-w-[1024px]' id='projectsBody'>
             <h2 className='text-[#111322] text-center relative font-semibold leading-[2.375rem] text-[1.875rem] md:text-[2.75rem] lg:text-[3.75rem]'>
                 Selected Projects
                 <span className='text-base absolute top-[-8px] mt-[-0.5rem] max-[500px]:right-0 font-normal font-shadows lg:text-[1.75rem] md:tracking-[-1.2px]'>From 2021 till now</span>
             </h2>
-            <div className='flex flex-col gap-8 md:gap-16 mt-8 md:mt-16' >
+            <div className='flex flex-col gap-8 md:gap-16 mt-8 md:mt-16' id='projects'>
                 {projects.map((project, index) => {
                     return (
                         <div key={index} className={`flex flex-col gap-3 md:gap-8 md:flex-row-reverse md:justify-end`}>
