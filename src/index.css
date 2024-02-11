@@ -45,14 +45,12 @@ body {
 
 .nav_border {
   border-radius: 16px;
-  border: 1px solid var(--Gray-cool-200, #dcdfea);
-  background: #fff;
 }
 
 .header_background {
   border-radius: 28px;
   border: 1px solid var(--Gray-cool-200, #dcdfea);
-  background: var(--Gray-cool-50, #f9f9fb);
+  /* background: var(--Gray-cool-50, #f9f9fb); */
 }
 
 .project_images:nth-child(even) {
