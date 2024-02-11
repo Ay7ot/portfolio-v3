@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import About from "./components/About";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
@@ -6,7 +6,21 @@ import TabBar from "./components/TabBar";
 
 export default function App() {
 
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('theme');
+    if (!storedTheme) {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark')
+        localStorage.setItem('theme', 'dark')
+      } else {
+        localStorage.setItem('theme', theme)
+      }
+    } else {
+      setTheme(storedTheme)
+    }
+  }, [theme])
 
   return (
     <div className={`flex flex-col items-center dynamicHeight ${theme === 'dark' && 'dark'} transition-all duration-300 ease-linear`}>

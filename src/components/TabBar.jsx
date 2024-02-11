@@ -178,8 +178,10 @@ export default function TabBar({ theme, setTheme }) {
                             onClick={() => {
                                 if (theme === 'dark') {
                                     setTheme('light')
+                                    localStorage.setItem('theme', 'light')
                                 } else {
                                     setTheme('dark')
+                                    localStorage.setItem('theme', 'dark')
                                 }
                             }}
                             className="p-2 sm:p-4 rounded-full bg-[#EFF1F5] border-[0.24px] border-[#DCDFEA] cursor-pointer transition-all duration-300 ease-linear origin-bottom dock-item"
