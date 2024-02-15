@@ -13,7 +13,7 @@
         "name": "ShopWithSteeze",
         "type": "Web store",
         "sector": "E-Commerce",
-        "description": "A music web app built with SpotifyAPI. Users can sign in with their spotify account, search for an artist and play songs from the artist. Built to practice handling api calls and advanced React.",
+        "description": "Shop with Steeze, where sophistication meets style. Discover our exquisite collection of men's jewelry, meticulously crafted to elevate your everyday look. ",
         "github": "https://github.com/Ay7ot/ShopWithSteeze",
         "live": "https://shopwithsteeze.web.app/",
         "deskimg": "/steeze-desktop.png",
