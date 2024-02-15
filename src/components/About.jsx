@@ -1,15 +1,18 @@
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function About() {
     return (
         <section className='pt-[2rem] pb-[6rem] md:pt-[4rem] md:pb-[8rem] w-full max-w-[1024px]' id="about">
             <div className=" flex md:flex-row flex-col gap-4 md:gap-16 items-center w-full">
                 <div className="self-start relative">
-                    <div className="w-[200px] min-[380px]:w-[280px] border-[#DCDFEA] border-[1px] rounded-[1.25rem]">
-                        <img src="/ayomide.jpg" className="w-full rounded-t-[1.25rem]" />
-                        <div className="bg-white p-4 rounded-b-[1.25rem]">
-                            <p className="font-shadows text-center">This is what I look like currently, selfies are not my thing but I try</p>
+                    <AnimationOnScroll animateIn="animate__wobble" duration={2}>
+                        <div className="w-[200px] min-[380px]:w-[280px] border-[#DCDFEA] border-[1px] rounded-[1.25rem]">
+                            <img src="/ayomide.jpg" className="w-full rounded-t-[1.25rem]" />
+                            <div className="bg-white p-4 rounded-b-[1.25rem]">
+                                <p className="font-shadows text-center">This is what I look like currently, selfies are not my thing but I try</p>
+                            </div>
                         </div>
-                    </div>
+                    </AnimationOnScroll>
                     {/* <div className="w-[200px] min-[380px]:w-[280px]">
                     <img src="/ayomide.jpg" className="w-full rounded-t-[1.25rem]" />
                     <div className="bg-white p-4 rounded-b-[1.25rem]">
@@ -38,7 +41,12 @@ export default function About() {
                     </svg>
                     <p className="text-[#05437A]">Connect with me</p>
                 </div>
-                <h4 className="max-w-[600px] mt-10 text-center text-[#30374F] dark:text-white font-bold tracking-[-1.5px] leading-[3rem] md:leading-[86px] text-[2.5rem] md:text-[4rem] lg:text-[4.5rem]">
+                <h4
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                    data-aos-easing="ease-in"
+                    className="max-w-[600px] mt-10 text-center text-[#30374F] dark:text-white font-bold tracking-[-1.5px] leading-[3rem] md:leading-[86px] text-[2.5rem] md:text-[4rem] lg:text-[4.5rem]"
+                >
                     Let&apos;s build the <br /> future together
                 </h4>
                 <p className="text-[#5D6B98] dark:text-[#DCDFEA] text-sm md:text-[1.25rem] text-center mt-5 font-medium leading-5 md:leading-[30px]">
@@ -66,7 +74,7 @@ export default function About() {
                     </button>
                 </div>
                 <div className="md:border-none w-full border-[1px] border-[#DCDFEA] mt-32 flex items-center justify-center md:justify-end rounded-xl py-5">
-                    <p className="text-sm md:text-[18px] font-medium leading-5 md:leading-7 dark:text-white">Designed by <span className="text-[#0067C2]">The Poe✌️</span></p>
+                    <a href="https://twitter.com/its_the_poe" target="_blank" rel="noreferrer" className="text-sm md:text-[18px] font-medium leading-5 md:leading-7 dark:text-white">Designed by <span className="text-[#0067C2]">The Poe✌️</span></a>
                 </div>
             </div>
         </section>

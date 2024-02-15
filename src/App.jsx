@@ -3,6 +3,8 @@ import About from "./components/About";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
 import TabBar from "./components/TabBar";
+import 'animate.css';
+import Loader from "./Loader";
 
 export default function App() {
 
@@ -14,28 +16,38 @@ export default function App() {
       if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         setTheme('dark')
         localStorage.setItem('theme', 'dark')
+        document.documentElement.classList.add('dark')
       } else {
         localStorage.setItem('theme', theme)
       }
     } else {
       setTheme(storedTheme)
+      if (storedTheme === 'dark') {
+        document.documentElement.classList.add('dark')
+      }
     }
   }, [theme])
 
   return (
-    <div className={`flex flex-col items-center dynamicHeight ${theme === 'dark' && 'dark'} transition-all duration-300 ease-linear`}>
-      <div className="flex flex-col items-center w-full p-3 sm:p-6 bg-white dark:bg-[#30374F]" id="home">
-        <Header />
+    <>
+      <div className="flex items-center justify-center dynamicHeight" id="loader">
+        <Loader />
       </div>
-      <div className="flex flex-col items-center w-full p-3 sm:p-6 bg-white dark:bg-[#30374F]">
-        <Projects />
+      <div style={{ display: 'none' }} id="content" className={`flex flex-col items-center dynamicHeight transition-all duration-300 ease-linear`}>
+        <div
+          className="flex flex-col items-center w-full p-3 sm:p-6 bg-white dark:bg-[#30374F]" id="home">
+          <Header />
+        </div>
+        <div className="flex flex-col items-center w-full p-3 sm:p-6 bg-white dark:bg-[#30374F]">
+          <Projects />
+        </div>
+        <div className="flex flex-col items-center bg-[#F9F9FB] dark:bg-[#111322] w-full p-3 sm:p-6 ">
+          <About />
+        </div>
+        <div className="flex items-center justify-center w-full fixed p-3 bottom-0 sm:p-6 z-[6]">
+          <TabBar theme={theme} setTheme={setTheme} />
+        </div>
       </div>
-      <div className="flex flex-col items-center bg-[#F9F9FB] dark:bg-[#111322] w-full p-3 sm:p-6 ">
-        <About />
-      </div>
-      <div className="flex items-center justify-center w-full fixed p-3 bottom-0 sm:p-6">
-        <TabBar theme={theme} setTheme={setTheme} />
-      </div>
-    </div>
+    </>
   )
 }

@@ -4,10 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/dot.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Ayomide</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.addEventListener("load", function () {
+        // Show the content after everything has loaded
+        document.getElementById("content").style.display = "block";
+
+        // Hide the loader
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").scrollTo(0, 0);
+        AOS.init();
+      });
+    </script>
   </body>
 </html>

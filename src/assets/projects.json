@@ -10,6 +10,16 @@
         "mobileimg": "/resumate-mobile.PNG"
     },
     {
+        "name": "ShopWithSteeze",
+        "type": "Web store",
+        "sector": "E-Commerce",
+        "description": "A music web app built with SpotifyAPI. Users can sign in with their spotify account, search for an artist and play songs from the artist. Built to practice handling api calls and advanced React.",
+        "github": "https://github.com/Ay7ot/ShopWithSteeze",
+        "live": "https://shopwithsteeze.web.app/",
+        "deskimg": "/steeze-desktop.png",
+        "mobileimg": "/steeze-mobile.PNG"
+    },
+    {
         "name": "Musica",
         "type": "Web App",
         "sector": "Music",
