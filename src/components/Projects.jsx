@@ -47,9 +47,9 @@ export default function Projects() {
                             <div
                                 className={`flex items-center gap-3 ${index === 0 ? '' : index % 2 !== 0 ? 'flex-row-reverse' : 'flex-row'}`}>
                                 <div className={`shadow-lg flex-1 md:h-[400px] h-[250px] rounded-lg md:rounded-[1.5rem] relative ${project.name === 'ResuMate' || project.name === 'ShopWithSteeze' || project.name === 'BookWormz' ? ' border-[1px] border-[#DCDFEA] dark:border-none' : ''}`}>
-                                    <img src={project.deskimg} className='h-full object-contain md:object-cover rounded-lg md:rounded-[1.5rem]' />
+                                    <img src={project.deskimg} className='h-full object-cover rounded-lg md:rounded-[1.5rem]' />
                                 </div>
-                                <div className={`shadow-lg hidden md:flex flex-[0.33] md:h-[400px] h-[250px] rounded-lg md:rounded-[1.5rem] relative ${project.name === 'ResuMate' || project.name === 'ShopWithSteeze' || project.name === 'BookWormz' ? ' border-[1px] border-[#DCDFEA] dark:border-none' : ''}`}>
+                                <div className={`shadow-lg flex-[0.33] md:h-[400px] h-[250px] rounded-lg md:rounded-[1.5rem] relative ${project.name === 'ResuMate' || project.name === 'ShopWithSteeze' || project.name === 'BookWormz' ? ' border-[1px] border-[#DCDFEA] dark:border-none' : ''}`}>
                                     <img src={project.mobileimg} className='h-full object-cover rounded-lg md:rounded-[1.5rem]' />
                                 </div>
                             </div>
@@ -67,14 +67,14 @@ export default function Projects() {
                                     </p>
                                 </div>
                                 <div className='mt-auto flex flex-col gap-4 w-full'>
-                                    <a href={project.github} className=' px-4 py-[10px] flex items-center justify-between w-full'>
-                                        <p className='text-[#5D6B98] dark:text-[#FCFCFD] text-sm font-medium leading-[1.25rem]'>View Site</p>
+                                    <a href={project.github} target='_blank' rel='noreferrer' className=' px-4 py-[10px] flex items-center justify-between w-full'>
+                                        <p className='text-[#5D6B98] dark:text-[#FCFCFD] text-sm font-medium leading-[1.25rem]'>View Code</p>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                             <path d="M5.83301 14.1663L14.1663 5.83301M14.1663 5.83301H5.83301M14.1663 5.83301V14.1663" stroke="#7D89B0" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
                                     </a>
-                                    <a href={project.live} className='border-[#B9C0D4] dark:border-[#5D6B98] dark:bg-[#404968] border-[1px] px-4 py-[10px] rounded-lg flex items-center justify-between w-full'>
-                                        <p className='text-[#5D6B98] dark:text-[#FCFCFD] text-sm font-medium leading-[1.25rem]'>View Code</p>
+                                    <a href={project.live} target='_blank' rel='noreferrer' className='border-[#B9C0D4] dark:border-[#5D6B98] dark:bg-[#404968] border-[1px] px-4 py-[10px] rounded-lg flex items-center justify-between w-full'>
+                                        <p className='text-[#5D6B98] dark:text-[#FCFCFD] text-sm font-medium leading-[1.25rem]'>View Site</p>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                             <path d="M5.83301 14.1663L14.1663 5.83301M14.1663 5.83301H5.83301M14.1663 5.83301V14.1663" stroke="#7D89B0" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>

@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import TabBar from "./components/TabBar";
 import 'animate.css';
 import Loader from "./Loader";
+import Aos from "aos";
 
 export default function App() {
 
@@ -13,13 +14,7 @@ export default function App() {
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
     if (!storedTheme) {
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        setTheme('dark')
-        localStorage.setItem('theme', 'dark')
-        document.documentElement.classList.add('dark')
-      } else {
-        localStorage.setItem('theme', theme)
-      }
+      localStorage.setItem('theme', theme)
     } else {
       setTheme(storedTheme)
       if (storedTheme === 'dark') {
@@ -27,6 +22,24 @@ export default function App() {
       }
     }
   }, [theme])
+
+  useEffect(() => {
+    function hasWindowLoaded() {
+      return document.readyState === 'complete';
+    }
+
+    if (hasWindowLoaded()) {
+
+      setTimeout(() => {
+        document.getElementById("content").style.display = "block";
+
+        // Hide the loader
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").scrollTo(0, 0);
+        Aos.init()
+      }, 1500)
+    }
+  }, [])
 
   return (
     <>

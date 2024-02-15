@@ -26,19 +26,27 @@
     <meta name="twitter:image" content="https://aydot-v3.netlify.app/ayomide.jpg" />
     <title>Ayomide</title>
   </head>
-  <body>
+  <body onload="closeLoader()">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script>
-      window.addEventListener("load", function () {
-        // Show the content after everything has loaded
+      function closeLoader() {
         document.getElementById("content").style.display = "block";
 
         // Hide the loader
         document.getElementById("loader").style.display = "none";
         document.getElementById("content").scrollTo(0, 0);
         AOS.init();
-      });
+      }
+      // window.onload = () => {
+      //   // Show the content after DOM content has loaded
+      //   document.getElementById("content").style.display = "block";
+
+      //   // Hide the loader
+      //   document.getElementById("loader").style.display = "none";
+      //   document.getElementById("content").scrollTo(0, 0);
+      //   AOS.init();
+      // };
     </script>
   </body>
 </html>
