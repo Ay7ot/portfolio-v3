@@ -104,7 +104,7 @@ export default function TabBar({ theme, setTheme }) {
             <div className=" p-3 rounded-full border-[0.82px] border-[#DCDFEA] bg-[#FCFCFD] dark:bg-[#4A5578] dark:border-[#5D6B98]">
                 <div className="flex items-center gap-2 justify-between dock">
                     <div className='flex flex-col items-center relative'>
-                        <a href='#home' className="p-2 sm:p-4 rounded-full bg-[#EFF1F5] border-[0.24px] border-[#DCDFEA] cursor-pointer transition-all duration-300 ease-linear origin-bottom dock-item">
+                        <a href='#home' className="p-2 sm:p-4 rounded-full bg-[#EFF1F5] min-h-[2.25rem] min-w-[2.25rem] flex items-center justify-center border-[0.24px] border-[#DCDFEA] cursor-pointer transition-all duration-300 ease-linear origin-bottom dock-item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
                                 <path fillRule="evenodd" clipRule="evenodd" d="M15.5 7.45991V13.9737C15.5 15.8299 14.0076 17.3346 12.1667 17.3346H3.83333C1.99238 17.3346 0.5 15.8299 0.5 13.9737V7.45991C0.5 6.45078 0.949704 5.49505 1.72488 4.85674L5.89155 1.42576C7.11859 0.415373 8.88141 0.415371 10.1084 1.42576L14.2751 4.85674C15.0503 5.49505 15.5 6.45078 15.5 7.45991ZM7.99959 9.00128L8.25739 8.74348C8.96929 8.03159 10.1235 8.03159 10.8354 8.74348C11.5473 9.45538 11.5473 10.6096 10.8354 11.3215L9.03079 13.1261C8.46128 13.6956 7.53791 13.6956 6.9684 13.1261L5.1638 11.3215C4.45191 10.6096 4.45191 9.45538 5.1638 8.74348C5.87569 8.03159 7.0299 8.03159 7.74179 8.74348L7.99959 9.00128Z" fill="#111322" />
                             </svg>
@@ -117,7 +117,7 @@ export default function TabBar({ theme, setTheme }) {
 
                     </div>
                     <div className='flex flex-col items-center relative'>
-                        <a href='#projectsBody' className="p-2 sm:p-4 rounded-full bg-[#EFF1F5] border-[0.24px] border-[#DCDFEA] cursor-pointer transition-all duration-300 ease-linear origin-bottom dock-item">
+                        <a href='#projectsBody' className="p-2 sm:p-4 rounded-full bg-[#EFF1F5] min-h-[2.25rem] min-w-[2.25rem] flex items-center justify-center border-[0.24px] border-[#DCDFEA] cursor-pointer transition-all duration-300 ease-linear origin-bottom dock-item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M8.361 2.7265C9.03157 1.31382 10.9691 1.31382 11.6396 2.7265L12.7986 5.16797C13.0649 5.72895 13.5796 6.11777 14.175 6.20773L16.7664 6.59924C18.2659 6.82577 18.8646 8.74161 17.7796 9.84123L15.9044 11.7417C15.4736 12.1783 15.277 12.8074 15.3787 13.424L15.8213 16.1074C16.0775 17.6601 14.51 18.8442 13.1689 18.1111L10.851 16.8442C10.3184 16.5531 9.6822 16.5531 9.14964 16.8442L6.83179 18.1111C5.49065 18.8442 3.92318 17.6601 4.17931 16.1075L4.62198 13.424C4.72369 12.8074 4.52709 12.1783 4.09623 11.7417L2.22105 9.84123C1.13605 8.74161 1.73477 6.82577 3.23421 6.59924L5.82564 6.20773C6.42107 6.11777 6.9358 5.72895 7.20208 5.16797L8.361 2.7265Z" fill="#111322" />
                             </svg>
@@ -129,7 +129,7 @@ export default function TabBar({ theme, setTheme }) {
                         </div>
                     </div>
                     <div className='flex flex-col items-center relative'>
-                        <a href='#about' className="p-2 sm:p-4 rounded-full bg-[#EFF1F5] border-[0.24px] border-[#DCDFEA] cursor-pointer transition-all duration-300 ease-linear origin-bottom dock-item">
+                        <a href='#about' className="p-2 sm:p-4 rounded-full bg-[#EFF1F5] min-h-[2.25rem] min-w-[2.25rem] flex items-center justify-center border-[0.24px] border-[#DCDFEA] cursor-pointer transition-all duration-300 ease-linear origin-bottom dock-item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
                                 <path fillRule="evenodd" clipRule="evenodd" d="M12.193 1.25C12.193 0.904822 11.9132 0.625 11.568 0.625C11.2229 0.625 10.943 0.904822 10.943 1.25V2.50041H5.52661V1.25C5.52661 0.904822 5.24679 0.625 4.90161 0.625C4.55643 0.625 4.27661 0.904822 4.27661 1.25V2.50248C2.30918 2.56809 0.734375 4.18368 0.734375 6.16708V14.2504C0.734375 16.2755 2.376 17.9171 4.40104 17.9171H12.0677C14.0928 17.9171 15.7344 16.2754 15.7344 14.2504V6.16707C15.7344 4.18397 14.1601 2.56858 12.193 2.50251V1.25ZM8.25545 8.8675L8.44671 8.66648C8.97487 8.11139 9.83118 8.11139 10.3593 8.66648C10.8875 9.22158 10.8875 10.1216 10.3593 10.6767L9.0205 12.0838C8.59798 12.5278 7.91293 12.5278 7.4904 12.0838L6.15157 10.6767C5.62341 10.1216 5.62341 9.22158 6.15157 8.66648C6.67973 8.11139 7.53604 8.11139 8.06419 8.66648L8.25545 8.8675Z" fill="#111322" />
                             </svg>
@@ -142,7 +142,7 @@ export default function TabBar({ theme, setTheme }) {
                     </div>
                     <div className="w-[1px] h-[36px] tab-mid-border"></div>
                     <div className='flex flex-col items-center relative'>
-                        <a href='https://twitter.com/TeyeAyo' target='_blank' rel='noreferrer' className="p-2 sm:p-4 rounded-full bg-[#EFF1F5] border-[0.24px] border-[#DCDFEA] cursor-pointer transition-all duration-300 ease-linear origin-bottom dock-item">
+                        <a href='https://twitter.com/TeyeAyo' target='_blank' rel='noreferrer' className="p-2 sm:p-4 rounded-full bg-[#EFF1F5] min-h-[2.25rem] min-w-[2.25rem] flex items-center justify-center border-[0.24px] border-[#DCDFEA] cursor-pointer transition-all duration-300 ease-linear origin-bottom dock-item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
                                 <path d="M8.69087 0.666016C7.28831 0.666016 6.1513 1.85992 6.1513 3.33268C6.1513 3.55523 6.17726 3.77141 6.22618 3.97807C4.87757 3.97807 2.84626 3.7054 1.14979 2.00575C0.924199 1.77974 0.508219 1.93085 0.523867 2.2498C0.775284 7.37445 2.97001 8.86929 4.10023 8.96231C3.3704 9.68313 2.31023 10.2521 1.24342 10.5075C0.961872 10.5749 0.89232 10.8831 1.16763 10.9726C1.93098 11.2209 3.02361 11.3165 3.61173 11.3327C7.77228 11.3327 11.1539 7.83077 11.2292 3.48088C11.7754 3.12565 12.1253 2.35435 12.3219 1.80795C12.3698 1.67488 12.1517 1.51983 12.0211 1.57419C11.6131 1.74407 11.095 1.78434 10.6538 1.64055C10.188 1.04553 9.48164 0.666016 8.69087 0.666016Z" fill="#111322" />
                             </svg>
@@ -154,7 +154,7 @@ export default function TabBar({ theme, setTheme }) {
                         </div>
                     </div>
                     <div className='flex flex-col items-center relative'>
-                        <a href='https://github.com/Ay7ot' target='_blank' rel='noreferrer' className="p-2 sm:p-4 rounded-full bg-[#EFF1F5] border-[0.24px] border-[#DCDFEA] cursor-pointer transition-all duration-300 ease-linear origin-bottom dock-item">
+                        <a href='https://github.com/Ay7ot' target='_blank' rel='noreferrer' className="p-2 sm:p-4 rounded-full bg-[#EFF1F5] min-h-[2.25rem] min-w-[2.25rem] flex items-center justify-center border-[0.24px] border-[#DCDFEA] cursor-pointer transition-all duration-300 ease-linear origin-bottom dock-item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
                                 <path d="M8.875 1C5.0075 1 1.875 4.1325 1.875 8C1.875 11.0975 3.87875 13.7137 6.66125 14.6412C7.01125 14.7025 7.1425 14.4925 7.1425 14.3087C7.1425 14.1425 7.13375 13.5912 7.13375 13.005C5.375 13.3287 4.92 12.5762 4.78 12.1825C4.70125 11.9812 4.36 11.36 4.0625 11.1937C3.8175 11.0625 3.4675 10.7387 4.05375 10.73C4.605 10.7212 4.99875 11.2375 5.13 11.4475C5.76 12.5062 6.76625 12.2087 7.16875 12.025C7.23 11.57 7.41375 11.2637 7.615 11.0887C6.0575 10.9137 4.43 10.31 4.43 7.6325C4.43 6.87125 4.70125 6.24125 5.1475 5.75125C5.0775 5.57625 4.8325 4.85875 5.2175 3.89625C5.2175 3.89625 5.80375 3.7125 7.1425 4.61375C7.7025 4.45625 8.2975 4.3775 8.8925 4.3775C9.4875 4.3775 10.0825 4.45625 10.6425 4.61375C11.9813 3.70375 12.5675 3.89625 12.5675 3.89625C12.9525 4.85875 12.7075 5.57625 12.6375 5.75125C13.0837 6.24125 13.355 6.8625 13.355 7.6325C13.355 10.3187 11.7188 10.9137 10.1613 11.0887C10.415 11.3075 10.6337 11.7275 10.6337 12.3837C10.6337 13.32 10.625 14.0725 10.625 14.3087C10.625 14.4925 10.7563 14.7112 11.1062 14.6412C12.4959 14.1721 13.7034 13.279 14.5589 12.0877C15.4143 10.8963 15.8746 9.46668 15.875 8C15.875 4.1325 12.7425 1 8.875 1Z" fill="black" />
                             </svg>
@@ -166,7 +166,7 @@ export default function TabBar({ theme, setTheme }) {
                         </div>
                     </div>
                     <div className='flex flex-col items-center relative'>
-                        <a href='https://www.linkedin.com/in/ayomide-ibiteye-b124b823b/' target='_blank' rel='noreferrer' className="p-2 sm:p-4 rounded-full bg-[#EFF1F5] border-[0.24px] border-[#DCDFEA] cursor-pointer transition-all duration-300 ease-linear origin-bottom dock-item">
+                        <a href='https://www.linkedin.com/in/ayomide-ibiteye-b124b823b/' target='_blank' rel='noreferrer' className="p-2 sm:p-4 rounded-full bg-[#EFF1F5] min-h-[2.25rem] min-w-[2.25rem] flex items-center justify-center border-[0.24px] border-[#DCDFEA] cursor-pointer transition-all duration-300 ease-linear origin-bottom dock-item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                                 <path fillRule="evenodd" clipRule="evenodd" d="M3.25065 1.66732C3.25065 2.4037 2.6537 3.00065 1.91732 3.00065C1.18094 3.00065 0.583984 2.4037 0.583984 1.66732C0.583984 0.930938 1.18094 0.333984 1.91732 0.333984C2.6537 0.333984 3.25065 0.930938 3.25065 1.66732ZM3.25065 4.66756V13.6676H0.583984V4.66756H3.25065ZM5.25147 4.66756H7.91813V5.2285C8.33517 5.0811 8.78395 5.0009 9.25147 5.0009C11.4606 5.0009 13.2515 6.79176 13.2515 9.0009V13.6676H10.5848V9.0009C10.5848 8.26452 9.98784 7.66756 9.25146 7.66756C8.51509 7.66756 7.91813 8.26452 7.91813 9.0009V13.6676H5.25147V9.0009V4.66756Z" fill="#111322" />
                             </svg>
@@ -192,7 +192,7 @@ export default function TabBar({ theme, setTheme }) {
 
                                 }
                             }}
-                            className="p-2 sm:p-4 rounded-full bg-[#EFF1F5] border-[0.24px] border-[#DCDFEA] cursor-pointer transition-all duration-300 ease-linear origin-bottom dock-item"
+                            className="p-2 sm:p-4 rounded-full bg-[#EFF1F5] min-h-[2.25rem] min-w-[2.25rem] flex items-center justify-center border-[0.24px] border-[#DCDFEA] cursor-pointer transition-all duration-300 ease-linear origin-bottom dock-item"
                         >
                             {theme === 'dark'
                                 ?

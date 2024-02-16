@@ -46,15 +46,15 @@ export default function Projects() {
                         >
                             <div
                                 className={`flex items-center gap-3 ${index === 0 ? '' : index % 2 !== 0 ? 'flex-row-reverse' : 'flex-row'}`}>
-                                <div className={`shadow-lg flex-1 md:h-[400px] h-[250px] rounded-lg md:rounded-[1.5rem] relative ${project.name === 'ResuMate' || project.name === 'ShopWithSteeze' || project.name === 'BookWormz' ? ' border-[1px] border-[#DCDFEA] dark:border-none' : ''}`}>
-                                    <img src={project.deskimg} className='h-full object-cover rounded-lg md:rounded-[1.5rem]' />
+                                <div className={`flex-1 md:h-[400px] h-[250px] rounded-lg md:rounded-[1.5rem] relative ${project.name === 'ResuMate' || project.name === 'ShopWithSteeze' || project.name === 'BookWormz' ? ' border-[1px] border-[#DCDFEA] dark:border-none' : ''}`}>
+                                    <img loading='lazy' src={project.deskimg} className='h-full object-cover rounded-lg md:rounded-[1.5rem]' />
                                 </div>
-                                <div className={`shadow-lg flex-[0.33] md:h-[400px] h-[250px] rounded-lg md:rounded-[1.5rem] relative ${project.name === 'ResuMate' || project.name === 'ShopWithSteeze' || project.name === 'BookWormz' ? ' border-[1px] border-[#DCDFEA] dark:border-none' : ''}`}>
-                                    <img src={project.mobileimg} className='h-full object-cover rounded-lg md:rounded-[1.5rem]' />
+                                <div className={`flex-[0.33] md:h-[400px] h-[250px] rounded-lg md:rounded-[1.5rem] relative ${project.name === 'ResuMate' || project.name === 'ShopWithSteeze' || project.name === 'BookWormz' ? ' border-[1px] border-[#DCDFEA] dark:border-none' : ''}`}>
+                                    <img loading='lazy' src={project.mobileimg} className='h-full object-cover rounded-lg md:rounded-[1.5rem]' />
                                 </div>
                             </div>
                             <div
-                                className='shadow-lg md:w-[400px] md:h-[400px] pt-4 pb-3 px-3 flex flex-col items-start mt-auto h-full gap-4 rounded-[20px] border-[1px] border-[#DCDFEA] bg-[#fff] dark:border-[#5D6B98] dark:bg-[#111322]'>
+                                className='md:w-[400px] md:h-[400px] pt-4 pb-3 px-3 flex flex-col items-start mt-auto h-full gap-4 rounded-[20px] border-[1px] border-[#DCDFEA] bg-[#fff] dark:border-[#5D6B98] dark:bg-[#111322]'>
                                 <div className='flex flex-col w-full gap-4 '>
                                     <h3 className='text-[1.5rem] font-medium leading-8 text-[#111322] dark:text-[#FCFCFD] lg:text-[1.875rem]'>{project.name}</h3>
                                     <div className='flex gap-[6px] items-center'>
@@ -86,9 +86,15 @@ export default function Projects() {
                 })}
                 <button onClick={showMore ? showLessProjects : showMoreProjects} className='border-[#B9C0D4] dark:border-[#5D6B98] border-[1px] px-4 py-[10px] mt-8 md:mt-4 rounded-lg dark:bg-[#111322] hover:bg-[#F9F9FB] transition-all duration-300 ease-linear origin-left flex items-center justify-between w-full'>
                     <p className='text-[#5D6B98] dark:text-white text-sm font-medium leading-[1.25rem]'>{`Show ${showMore ? 'less' : 'more'} projects`}</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M12 5V19M5 12H19" stroke="#7D89B0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
+                    {!showMore ?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 5V19M5 12H19" stroke="#7D89B0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                        :
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19" stroke="#7D89B0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    }
                 </button>
             </div>
         </section>

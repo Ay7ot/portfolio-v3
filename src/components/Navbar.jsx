@@ -2,7 +2,7 @@ import Logo from "./Logo";
 
 export default function Navbar() {
     return (
-        <nav className="bg-[#fff] dark:bg-[#4A5578] rounded-[1rem] p-2 flex justify-between nav_border border-[#fff] dark:border-[#5D6B98]">
+        <nav className="bg-[#fff] dark:bg-[#4A5578] rounded-[1rem] p-2 flex justify-between nav_border border-[#DCDFEA] border-[1px] dark:border-[#5D6B98]">
             <div className="flex items-center gap-3">
                 <Logo />
                 <p className="text-[18px] dark:text-white font-semibold leading-7">Ayomide</p>

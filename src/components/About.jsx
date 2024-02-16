@@ -1,12 +1,25 @@
+import { useState } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function About() {
+
+    const [copied, setCopied] = useState(false);
+
+    function copyEmail() {
+        navigator.clipboard.writeText('ayomidotzee@gmail.com');
+        setCopied(true)
+
+        setTimeout(() => {
+            setCopied(false)
+        }, 4000)
+    }
+
     return (
         <section className='pt-[2rem] pb-[6rem] md:pt-[4rem] md:pb-[8rem] w-full max-w-[1024px]' id="about">
             <div className=" flex md:flex-row flex-col gap-4 md:gap-16 items-center w-full">
-                <div className="self-start relative">
+                <div className="self-center relative">
                     <AnimationOnScroll animateIn="animate__wobble" duration={2}>
-                        <div className="w-[200px] min-[380px]:w-[280px] border-[#DCDFEA] border-[1px] rounded-[1.25rem]">
+                        <div className="w-[250px] md:w-[300px] border-[#DCDFEA] border-[1px] rounded-[1.25rem]">
                             <img src="/ayomide.jpg" className="w-full rounded-t-[1.25rem]" />
                             <div className="bg-white p-4 rounded-b-[1.25rem]">
                                 <p className="font-shadows text-center">This is what I look like currently, selfies are not my thing but I try</p>
@@ -57,20 +70,15 @@ export default function About() {
                         href="mailto:ayomidotzee@gmail.com"
                         target="_blank"
                         rel="noreferrer"
-                        className="underline text-[#0067C2] dark:text-white"
+                        className="underline text-[#0067C2] dark:text-white md:text-[18px]"
                     >
                         ayomidotzee@gmail.com
                     </a>
                     <button
-                        onClick={() => {
-                            navigator.clipboard.writeText('ayomidotzee@gmail.com');
-
-                            // Alert the copied text
-                            alert("Copied the email: " + 'ayomidotzee@gmail.com');
-                        }}
-                        className="py-2 px-4 rounded-lg border-[1px] border-[#B9C0D4] dark:border-[#5D6B98] dark:bg-[#111322] dark:text-white text-xs md:text-sm font-medium leading-5 text-[#404968]"
+                        onClick={copyEmail}
+                        className="py-2 px-4 md:text-[18px] rounded-lg border-[1px] border-[#B9C0D4] min-[350px]:min-w-[100px] dark:border-[#5D6B98] dark:bg-[#111322] dark:text-white text-xs md:text-sm font-medium leading-5 text-[#404968]"
                     >
-                        Copy Email
+                        {copied ? 'Copied' : 'Copy Email'}
                     </button>
                 </div>
                 <div className="md:border-none w-full border-[1px] border-[#DCDFEA] mt-32 flex items-center justify-center md:justify-end rounded-xl py-5">
