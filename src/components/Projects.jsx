@@ -46,16 +46,16 @@ export default function Projects() {
                         >
                             <div
                                 className={`flex items-center gap-3 ${index === 0 ? '' : index % 2 !== 0 ? 'flex-row-reverse' : 'flex-row'}`}>
-                                <div className={`flex-1 md:h-[400px] h-[250px] rounded-lg md:rounded-[1.5rem] relative ${project.name === 'ResuMate' || project.name === 'ShopWithSteeze' || project.name === 'BookWormz' ? ' border-[1px] border-[#DCDFEA] dark:border-none' : ''}`}>
-                                    <img loading='lazy' src={project.deskimg} className='h-full object-cover rounded-lg md:rounded-[1.5rem]' />
+                                <div className={`flex-1 md:h-[400px] h-[250px] rounded-lg md:rounded-[1.5rem] relative border-[1px] border-[#DCDFEA] dark:border-[#5D6B98]`}>
+                                    <img src={project.deskimg} className='h-full object-cover rounded-lg md:rounded-[1.5rem]' />
                                 </div>
-                                <div className={`flex-[0.33] md:h-[400px] h-[250px] rounded-lg md:rounded-[1.5rem] relative ${project.name === 'ResuMate' || project.name === 'ShopWithSteeze' || project.name === 'BookWormz' ? ' border-[1px] border-[#DCDFEA] dark:border-none' : ''}`}>
-                                    <img loading='lazy' src={project.mobileimg} className='h-full object-cover rounded-lg md:rounded-[1.5rem]' />
+                                <div className={`flex-[0.33] md:h-[400px] h-[250px] rounded-lg md:rounded-[1.5rem] relative border-[1px] border-[#DCDFEA] dark:border-[#5D6B98]`}>
+                                    <img src={project.mobileimg} className='h-full object-cover rounded-lg md:rounded-[1.5rem]' />
                                 </div>
                             </div>
                             <div
                                 className='md:w-[400px] md:h-[400px] pt-4 pb-3 px-3 flex flex-col items-start mt-auto h-full gap-4 rounded-[20px] border-[1px] border-[#DCDFEA] bg-[#fff] dark:border-[#5D6B98] dark:bg-[#111322]'>
-                                <div className='flex flex-col w-full gap-4 '>
+                                <div className='flex flex-col w-full gap-4'>
                                     <h3 className='text-[1.5rem] font-medium leading-8 text-[#111322] dark:text-[#FCFCFD] lg:text-[1.875rem]'>{project.name}</h3>
                                     <div className='flex gap-[6px] items-center'>
                                         <p className='bg-[#F0F8FF] py-[2px] px-2 flex items-center justify-center rounded-[1rem] text-[#0067C2] text-xs font-medium leading-[18px]'>{project.sector}</p>
