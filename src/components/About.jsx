@@ -53,9 +53,9 @@ export default function About() {
                         <circle cx="4.5" cy="4" r="3" fill="#0067C2" />
                     </svg>
                     <p className="text-[#05437A]">Connect with me</p>
-                </div>
+                </div> 
                 <h4
-                    data-aos="fade-up"
+                    data-aos="fade-in"
                     data-aos-duration="500"
                     data-aos-easing="ease-in"
                     className="max-w-[600px] mt-10 text-center text-[#30374F] dark:text-white font-bold tracking-[-1.5px] leading-[3rem] md:leading-[86px] text-[2.5rem] md:text-[4rem] lg:text-[4.5rem]"

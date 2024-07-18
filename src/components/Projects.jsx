@@ -30,7 +30,7 @@ export default function Projects() {
     return (
         <section className='pt-[4rem] md:pt-[8rem] w-full max-w-[1024px]' id='projectsBody'>
             <h2
-                data-aos="fade-down"
+                data-aos="fade-in"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in"
                 className='text-[#111322] dark:text-white text-center relative font-semibold leading-[2.375rem] text-[1.875rem] md:text-[2.75rem] lg:text-[3.75rem]'>
@@ -46,12 +46,14 @@ export default function Projects() {
                         >
                             <div
                                 className={`flex items-center gap-3 ${index === 0 ? '' : index % 2 !== 0 ? 'flex-row-reverse' : 'flex-row'}`}>
-                                <div className={`flex-1 md:h-[400px] h-[250px] rounded-lg md:rounded-[1.5rem] relative border-[1px] border-[#DCDFEA] dark:border-[#5D6B98]`}>
-                                    <img src={project.deskimg} className='h-full object-cover rounded-lg md:rounded-[1.5rem]' />
+                                <div className={`flex-1 md:h-[400px] h-[250px] rounded-lg md:rounded-[1.75rem] relative`}>
+                                    <img src={project.deskimg} className='h-full object-cover w-full rounded-lg md:rounded-[1.5rem]' />
                                 </div>
-                                <div className={`flex-[0.33] md:h-[400px] h-[250px] rounded-lg md:rounded-[1.5rem] relative border-[1px] border-[#DCDFEA] dark:border-[#5D6B98]`}>
-                                    <img src={project.mobileimg} className='h-full object-cover rounded-lg md:rounded-[1.5rem]' />
-                                </div>
+                                {project.mobileimg &&
+                                    <div className={`flex-[0.5] md:flex-[0.45] md:h-[400px] h-[250px] rounded-lg md:rounded-[1.75rem] relative`}>
+                                        <img src={project.mobileimg} className='h-full object-cover w-full rounded-lg md:rounded-[1.5rem]' />
+                                    </div>
+                                }
                             </div>
                             <div
                                 className='md:w-[400px] md:h-[400px] pt-4 pb-3 px-3 flex flex-col items-start mt-auto h-full gap-4 rounded-[20px] border-[1px] border-[#DCDFEA] bg-[#fff] dark:border-[#5D6B98] dark:bg-[#111322]'>

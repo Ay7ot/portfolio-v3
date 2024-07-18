@@ -179,3 +179,16 @@ body {
     transform: translateX(-350px);
   }
 }
+
+.dock-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-track {
+  max-width: 350px !important;
+}
+.slick-slide div {
+  display: flex !important;
+}

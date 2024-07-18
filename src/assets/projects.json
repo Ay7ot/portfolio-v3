@@ -7,7 +7,7 @@
         "github": "https://github.com/Ay7ot/resumate",
         "live": "https://resumate-io.web.app/",
         "deskimg": "/resumate-desktop.png",
-        "mobileimg": "/resumate-mobile.PNG"
+        "mobileimg": "/resumate-mobile.png"
     },
     {
         "name": "ShopWithSteeze",
@@ -20,44 +20,22 @@
         "mobileimg": "/steeze-mobile.PNG"
     },
     {
-        "name": "Musica",
-        "type": "Web App",
-        "sector": "Music",
-        "description": "A music web app built with SpotifyAPI. Users can sign in with their spotify account, search for an artist and play songs from the artist. Built to practice handling api calls and advanced React.",
-        "github": "https://github.com/Ay7ot/musica-typescript",
-        "live": "https://dot-musica.netlify.app/",
-        "deskimg": "/musica-desktop.png",
-        "mobileimg": "/musica-mobile.PNG"
-    },
-    {
-        "name": "Pet Grooming",
-        "type": "Marketing",
-        "sector": "Vetinary",
-        "description": "A simple website built for a pet grooming company optimized for calls and emails.",
-        "github": "https://github.com/Ay7ot/dogGrooming/",
-        "live": "https://pet-groomer.netlify.app/",
-        "deskimg": "/pet-groomer-desktop.png",
-        "mobileimg": "/pet-groomer-mobile.PNG"
-    },
-    {
-        "name": "Movie Pitch",
-        "type": "Web App",
-        "sector": "AI",
-        "description": "A simple AI web app done with openaiAPI. Users would input a single sentence for a movie and they would get back a movie title, synopsis, actors and even a poster.",
-        "github": "https://github.com/Ay7ot/moviePitch/",
-        "live": "https://movie-synopsis.netlify.app/",
-        "deskimg": "/moviePitch-desktop.jpg",
-        "mobileimg": "/moviePitch-mobile.PNG"
-    },
-    {
-        "name": "Quizzical",
+        "name": "Trivia",
         "type": "Web App",
         "sector": "Education",
-        "description": "A simple quiz web app where users can play fun quizzes from different categories.",
-        "github": "https://spandors-trivia.netlify.app/",
+        "description": "A simple quiz app with varieties of sections including politics, geography, arts, philosophy etc.",
+        "github": "https://github.com/Ay7ot/spandors-trivia",
         "live": "https://spandors-trivia.netlify.app/",
-        "deskimg": "/quizzical-desktop.png",
-        "mobileimg": "/quizzical-mobile.PNG"
+        "deskimg": "/trivia-desktop.png"
+    },
+    {
+        "name": "Tenzie",
+        "type": "Web App",
+        "sector": "Gaming",
+        "description": "A tenzie web based browser game built to practice basic react state. Players roll the dice until its all the same number on all available dies. Best time and no. of rolls are saved to local storage.",
+        "github": "https://github.com/Ay7ot/tenzie/",
+        "live": "https://spandors-tenzie.netlify.app/",
+        "deskimg": "/tenzie-desktop.png"
     },
     {
         "name": "BookWormz",
@@ -66,7 +44,17 @@
         "description": "An open book library where users can search for books, read books, download and download them.",
         "github": "https://github.com/Ay7ot/bookwormz/",
         "live": "https://bookwormz.netlify.app/",
-        "deskimg": "/bookWormz-desktop.png",
-        "mobileimg": "/bookwormz-mobile.PNG"
+        "deskimg": "/bookWormz-deskstop.png",
+        "mobileimg": "/bookWormz-mobile.png"
+    },
+    {
+        "name": "Movie Pitch",
+        "type": "Web App",
+        "sector": "AI",
+        "description": "A simple AI web app done with openaiAPI. Users would input a single sentence for a movie and they would get back a movie title, synopsis, actors and even a poster.",
+        "github": "https://github.com/Ay7ot/moviePitch/",
+        "live": "https://movie-synopsis.netlify.app/",
+        "deskimg": "/moviePitch-desktop.png",
+        "mobileimg": "/moviePitch-mobile.png"
     }
 ]
