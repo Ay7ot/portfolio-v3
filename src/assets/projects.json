@@ -1,60 +1,70 @@
 [
-    {
-        "name": "ResuMate",
-        "type": "Web App",
-        "sector": "Productivity",
-        "description": "A comprehensive resume templating web application that empowers users to create polished and professional resumes effortlessly.",
-        "github": "https://github.com/Ay7ot/resumate",
-        "live": "https://resumate-io.web.app/",
-        "deskimg": "/resumate-desktop.png",
-        "mobileimg": "/resumate-mobile.png"
-    },
-    {
-        "name": "ShopWithSteeze",
-        "type": "Web store",
-        "sector": "E-Commerce",
-        "description": "Shop with Steeze, where sophistication meets style. Discover our exquisite collection of men's jewelry, meticulously crafted to elevate your everyday look. ",
-        "github": "https://github.com/Ay7ot/ShopWithSteeze",
-        "live": "https://shopwithsteeze.web.app/",
-        "deskimg": "/steeze-desktop.png",
-        "mobileimg": "/steeze-mobile.PNG"
-    },
-    {
-        "name": "Trivia",
-        "type": "Web App",
-        "sector": "Education",
-        "description": "A simple quiz app with varieties of sections including politics, geography, arts, philosophy etc.",
-        "github": "https://github.com/Ay7ot/spandors-trivia",
-        "live": "https://spandors-trivia.netlify.app/",
-        "deskimg": "/trivia-desktop.png"
-    },
-    {
-        "name": "Tenzie",
-        "type": "Web App",
-        "sector": "Gaming",
-        "description": "A tenzie web based browser game built to practice basic react state. Players roll the dice until its all the same number on all available dies. Best time and no. of rolls are saved to local storage.",
-        "github": "https://github.com/Ay7ot/tenzie/",
-        "live": "https://spandors-tenzie.netlify.app/",
-        "deskimg": "/tenzie-desktop.png"
-    },
-    {
-        "name": "BookWormz",
-        "type": "Web App",
-        "sector": "Education",
-        "description": "An open book library where users can search for books, read books, download and download them.",
-        "github": "https://github.com/Ay7ot/bookwormz/",
-        "live": "https://bookwormz.netlify.app/",
-        "deskimg": "/bookWormz-deskstop.png",
-        "mobileimg": "/bookWormz-mobile.png"
-    },
-    {
-        "name": "Movie Pitch",
-        "type": "Web App",
-        "sector": "AI",
-        "description": "A simple AI web app done with openaiAPI. Users would input a single sentence for a movie and they would get back a movie title, synopsis, actors and even a poster.",
-        "github": "https://github.com/Ay7ot/moviePitch/",
-        "live": "https://movie-synopsis.netlify.app/",
-        "deskimg": "/moviePitch-desktop.png",
-        "mobileimg": "/moviePitch-mobile.png"
-    }
+  {
+    "name": "GasTracka",
+    "type": "PWA",
+    "sector": "Blockchain",
+    "description": "A Progressive Web App that allows users to track their gas prices for various major blockchains.",
+    "github": "https://github.com/Ay7ot/GasTracka",
+    "live": "https://gastracka.netlify.app/",
+    "deskimg": "/gastracka-desktop.jpg",
+    "mobileimg": "/gastracka-mobile.jpg"
+  },
+  {
+    "name": "ResuMate",
+    "type": "Web App",
+    "sector": "Productivity",
+    "description": "A comprehensive resume templating web application that empowers users to create polished and professional resumes effortlessly.",
+    "github": "https://github.com/Ay7ot/resumate",
+    "live": "https://resumate-io.web.app/",
+    "deskimg": "/resumate-desktop.png",
+    "mobileimg": "/resumate-mobile.png"
+  },
+  {
+    "name": "ShopWithSteeze",
+    "type": "Web store",
+    "sector": "E-Commerce",
+    "description": "Shop with Steeze, where sophistication meets style. Discover our exquisite collection of men's jewelry, meticulously crafted to elevate your everyday look. ",
+    "github": "https://github.com/Ay7ot/ShopWithSteeze",
+    "live": "https://shopwithsteeze.web.app/",
+    "deskimg": "/steeze-desktop.png",
+    "mobileimg": "/steeze-mobile.PNG"
+  },
+  {
+    "name": "Trivia",
+    "type": "Web App",
+    "sector": "Education",
+    "description": "A simple quiz app with varieties of sections including politics, geography, arts, philosophy etc.",
+    "github": "https://github.com/Ay7ot/spandors-trivia",
+    "live": "https://spandors-trivia.netlify.app/",
+    "deskimg": "/trivia-desktop.png"
+  },
+  {
+    "name": "Tenzie",
+    "type": "Web App",
+    "sector": "Gaming",
+    "description": "A tenzie web based browser game built to practice basic react state. Players roll the dice until its all the same number on all available dies. Best time and no. of rolls are saved to local storage.",
+    "github": "https://github.com/Ay7ot/tenzie/",
+    "live": "https://spandors-tenzie.netlify.app/",
+    "deskimg": "/tenzie-desktop.png"
+  },
+  {
+    "name": "BookWormz",
+    "type": "Web App",
+    "sector": "Education",
+    "description": "An open book library where users can search for books, read books, download and download them.",
+    "github": "https://github.com/Ay7ot/bookwormz/",
+    "live": "https://bookwormz.netlify.app/",
+    "deskimg": "/bookWormz-deskstop.png",
+    "mobileimg": "/bookWormz-mobile.png"
+  },
+  {
+    "name": "Movie Pitch",
+    "type": "Web App",
+    "sector": "AI",
+    "description": "A simple AI web app done with openaiAPI. Users would input a single sentence for a movie and they would get back a movie title, synopsis, actors and even a poster.",
+    "github": "https://github.com/Ay7ot/moviePitch/",
+    "live": "https://movie-synopsis.netlify.app/",
+    "deskimg": "/moviePitch-desktop.png",
+    "mobileimg": "/moviePitch-mobile.png"
+  }
 ]
