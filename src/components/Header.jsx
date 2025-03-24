@@ -85,10 +85,10 @@ export default function Header() {
                     </div>
                 </div>
                 <p className="mt-8 text-[18px] font-medium leading-7 text-[#4A5578] dark:text-[#DCDFEA]">
-                    I&apos;m Ayomide, lover of music, anime, manga and...
+                    I&apos;m Ayomide, lover of music, anime, manga and a...
                 </p>
                 <h1 className="text-[#30374F] relative dark:text-white text-[2.5rem] md:text-[3.75rem] lg:text-[4rem] font-bold leading-[3rem] md:leading-[4rem] lg:leading-[5rem] lg:tracking-[-1.5px] mt-3">
-                    a Software Developer for Startups in
+                    Software Developer for Companies in
                     <br className="sm:hidden" />
                     <span className='inline-block md:ml-4 mt-4 md:mt-0 md:absolute'><HeaderAnimations /></span>
                 </h1>
