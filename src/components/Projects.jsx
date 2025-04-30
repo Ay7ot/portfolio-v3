@@ -51,7 +51,7 @@ export default function Projects() {
             <div
               key={index}
               className={`flex flex-col gap-3 md:gap-8 md:flex-row-reverse md:justify-end ${
-                !showMore && index >= 3 ? "hidden" : ""
+                !showMore && index >= 5 ? "hidden" : ""
               } project`}
             >
               <div
@@ -77,7 +77,7 @@ export default function Projects() {
                   >
                     <img
                       src={project.mobileimg}
-                      className="h-full object-cover w-full rounded-lg md:rounded-[1.5rem]"
+                      className="h-full object-cover w-full rounded-lg md:rounded-[1.5rem] max-w-[200px]"
                     />
                   </div>
                 )}

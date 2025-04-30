@@ -1,5 +1,25 @@
 [
   {
+    "name": "Invoyce",
+    "type": "Saas Tool",
+    "sector": "Fintech",
+    "description": "Smart Invoicing for Africa's Freelancers. Create and send professional invoices, get paid faster, and track payments—with our simple invoicing tool designed for freelancers in Africa and beyond.",
+    "github": "https://github.com/Ay7ot/invoyce",
+    "live": "https:/invoyce.pro/",
+    "deskimg": "/invoyce-desktop.png",
+    "mobileimg": "/invoyce-mobile.png"
+  },
+  {
+    "name": "Findash",
+    "type": "Dashboard",
+    "sector": "Fintech",
+    "description": "A dashboard for a fintech product that allows users to track their finances, investments, savings, and other related information. Built for Fobework's Assessment as a full working frontend dashboard. (Login with any email and password)",
+    "github": "https://github.com/Ay7ot/findash",
+    "live": "https://findash-tryve.netlify.app/",
+    "deskimg": "/findash-desktop.png",
+    "mobileimg": "/findash-mobile.png"
+  },
+  {
     "name": "GasTracka",
     "type": "PWA",
     "sector": "Blockchain",
@@ -28,6 +48,16 @@
     "live": "https://shopwithsteeze.web.app/",
     "deskimg": "/steeze-desktop.png",
     "mobileimg": "/steeze-mobile.PNG"
+  },
+  {
+    "name": "10k MRR",
+    "type": "Website",
+    "sector": "Dashboard",
+    "description": "A one-page dashboard for a SaaS product that allows showcase their product and track their revenue, customers, and other metrics.",
+    "github": "https://github.com/Ay7ot",
+    "live": "https://10k-mrr.netlify.app/",
+    "deskimg": "/mrr-desktop.png",
+    "mobileimg": "/mrr-mobile.png"
   },
   {
     "name": "Trivia",
