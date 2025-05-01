@@ -45,12 +45,46 @@ export default function App() {
   return (
     <HelmetProvider>
       <Helmet>
+        {/* <!-- Primary Meta Tags --> */}
         <title>Ayomide Ibiteye - Software Developer Nigeria</title>
         <meta
           name="description"
           content="Ayomide Ibiteye is a skilled Software Developer based in Nigeria, specializing in building web applications for Fintech, Edutech, and SaaS companies."
         />
-        {/* Add other general meta tags here if needed */}
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://teyeayo.info/" />{" "}
+        {/* Ensure this is your canonical URL */}
+        <meta
+          property="og:title"
+          content="Ayomide Ibiteye - Software Developer Nigeria"
+        />
+        <meta
+          property="og:description"
+          content="Ayomide Ibiteye is a skilled Software Developer based in Nigeria, specializing in building web applications for Fintech, Edutech, and SaaS companies."
+        />
+        <meta property="og:image" content="https://teyeayo.info/ayomide.jpg" />
+        <meta
+          property="og:image:alt"
+          content="Ayomide Ibiteye's Portfolio Landing Page"
+        />
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://teyeayo.info/" />{" "}
+        {/* Ensure this is your canonical URL */}
+        <meta
+          property="twitter:title"
+          content="Ayomide Ibiteye - Software Developer Nigeria"
+        />
+        <meta
+          property="twitter:description"
+          content="Ayomide Ibiteye is a skilled Software Developer based in Nigeria, specializing in building web applications for Fintech, Edutech, and SaaS companies."
+        />
+        <meta
+          property="twitter:image"
+          content="https://teyeayo.info/ayomide.jpg"
+        />
+        {/* You can add other meta tags like theme-color etc. here */}
       </Helmet>
       <div
         className="flex items-center justify-center dynamicHeight"
