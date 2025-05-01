@@ -20,6 +20,16 @@
     "mobileimg": "/findash-mobile.png"
   },
   {
+    "name": "GreenGrow",
+    "type": "Website",
+    "sector": "Agriculture",
+    "description": "Smart Farming Solutions for a Sustainable Future. Revolutionize your agricultural practices with IoT sensors and data analytics that increase yields while reducing resource consumption.",
+    "github": "https://github.com/Ay7ot",
+    "live": "https://greengrow.netlify.app/",
+    "deskimg": "/greengrow-desktop.png",
+    "mobileimg": "/greengrow-mobile.png"
+  },
+  {
     "name": "GasTracka",
     "type": "PWA",
     "sector": "Blockchain",
