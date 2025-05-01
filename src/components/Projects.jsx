@@ -35,7 +35,7 @@ export default function Projects() {
         data-aos="fade-in"
         data-aos-duration="1000"
         data-aos-easing="ease-in"
-        className="text-[#111322] dark:text-white text-center relative font-semibold leading-[2.375rem] text-[1.875rem] md:text-[2.75rem] lg:text-[3.75rem]"
+        className="text-[#ffffff1a] dark:text-white text-center relative font-semibold leading-[2.375rem] text-[1.875rem] md:text-[2.75rem] lg:text-[3.75rem]"
       >
         Selected Projects
         <span className="text-base absolute top-[-8px] mt-[-0.5rem] max-[500px]:right-0 font-normal font-shadows lg:text-[1.75rem] md:tracking-[-1.2px] dark:text-[#B9C0D4]">
@@ -68,6 +68,7 @@ export default function Projects() {
                 >
                   <img
                     src={project.deskimg}
+                    alt={`Desktop screenshot of the ${project.name} ${project.type} project`}
                     className="h-full object-cover w-full rounded-lg md:rounded-[1.5rem]"
                   />
                 </div>
@@ -77,28 +78,29 @@ export default function Projects() {
                   >
                     <img
                       src={project.mobileimg}
+                      alt={`Mobile screenshot of the ${project.name} ${project.type} project`}
                       className="h-full object-cover w-full rounded-lg md:rounded-[1.5rem] max-w-[200px]"
                     />
                   </div>
                 )}
               </div>
-              <div className="md:w-[400px] md:h-[400px] pt-4 pb-3 px-3 flex flex-col items-start mt-auto h-full gap-4 rounded-[20px] border-[1px] border-[#DCDFEA] bg-[#fff] dark:border-[#5D6B98] dark:bg-[#111322]">
+              <div className="md:w-[400px] md:h-[400px] pt-4 pb-3 px-3 flex flex-col items-start mt-auto h-full gap-4 rounded-[20px] border-[1px] border-[#DCDFEA] bg-[#fff] dark:border-[#ffffff1a] dark:bg-[#ffffff1a]">
                 <div className="flex flex-col w-full gap-4">
-                  <h3 className="text-[1.5rem] font-medium leading-8 text-[#111322] dark:text-[#FCFCFD] lg:text-[1.875rem]">
+                  <h3 className="text-[1.5rem] font-medium leading-8 text-[#ffffff1a] dark:text-[#FCFCFD] lg:text-[1.875rem]">
                     {project.name}
                   </h3>
                   <div className="flex gap-[6px] items-center">
                     <p className="bg-[#F0F8FF] py-[2px] px-2 flex items-center justify-center rounded-[1rem] text-[#0067C2] text-xs font-medium leading-[18px]">
                       {project.sector}
                     </p>
-                    <p className="text-[#111322] mt-[-0.25rem] items-center leading-4 font-semibold">
+                    <p className="text-[#ffffff1a] mt-[-0.25rem] items-center leading-4 font-semibold">
                       .
                     </p>
                     <p className="bg-[#F0F8FF] py-[2px] px-2 flex items-center justify-center rounded-[1rem] text-[#0067C2] text-xs font-medium leading-[18px]">
                       {project.type}
                     </p>
                   </div>
-                  <p className="text-[#404968] dark:text-[#EFF1F5] text-sm md:text-base leading-[1.25rem] md:leading-[1.25rem]">
+                  <p className="text-[#ffffff0d] dark:text-[#EFF1F5] text-sm md:text-base leading-[1.25rem] md:leading-[1.25rem]">
                     {project.description}
                   </p>
                 </div>
@@ -109,7 +111,7 @@ export default function Projects() {
                     rel="noreferrer"
                     className=" px-4 py-[10px] flex items-center justify-between w-full"
                   >
-                    <p className="text-[#5D6B98] dark:text-[#FCFCFD] text-sm font-medium leading-[1.25rem]">
+                    <p className="text-[#ffffff1a] dark:text-[#FCFCFD] text-sm font-medium leading-[1.25rem]">
                       View Code
                     </p>
                     <svg
@@ -132,9 +134,9 @@ export default function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noreferrer"
-                    className="border-[#B9C0D4] dark:border-[#5D6B98] dark:bg-[#404968] border-[1px] px-4 py-[10px] rounded-lg flex items-center justify-between w-full"
+                    className="border-[#B9C0D4] dark:border-[#ffffff1a] dark:bg-[#ffffff0d] border-[1px] px-4 py-[10px] rounded-lg flex items-center justify-between w-full"
                   >
-                    <p className="text-[#5D6B98] dark:text-[#FCFCFD] text-sm font-medium leading-[1.25rem]">
+                    <p className="text-[#ffffff1a] dark:text-[#FCFCFD] text-sm font-medium leading-[1.25rem]">
                       View Site
                     </p>
                     <svg
@@ -161,9 +163,9 @@ export default function Projects() {
         <div className="flex items-center justify-center">
           <button
             onClick={showMore ? showLessProjects : showMoreProjects}
-            className="border-[#B9C0D4] dark:border-[#5D6B98] border-[1px] px-4 py-[10px] mt-8 md:mt-4 rounded-lg dark:bg-[#111322] hover:bg-[#F9F9FB] transition-all duration-300 ease-linear origin-left flex items-center justify-between gap-4"
+            className="border-[#B9C0D4] dark:border-[#ffffff1a] border-[1px] px-4 py-[10px] mt-8 md:mt-4 rounded-lg dark:bg-[#ffffff1a] hover:bg-[#F9F9FB] transition-all duration-300 ease-linear origin-left flex items-center justify-between gap-4"
           >
-            <p className="text-[#5D6B98] dark:text-white text-sm font-medium leading-[1.25rem]">{`Show ${
+            <p className="text-[#ffffff1a] dark:text-white text-sm font-medium leading-[1.25rem]">{`Show ${
               showMore ? "less" : "more"
             } projects`}</p>
             {!showMore ? (

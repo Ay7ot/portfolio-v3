@@ -1,6 +1,9 @@
-export default function Loader() {
+
+import PropTypes from 'prop-types';
+
+export default function Loader({theme}) {
     return (
-        <div className="loader">
+        <div className={`loader ${theme === "dark" ? "dark-loader" : ""}`}>
             <div className="truckWrapper">
                 <div className="truckBody">
                     <svg
@@ -131,3 +134,8 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
 
     )
 }
+
+
+Loader.propTypes = {
+    theme: PropTypes.string.isRequired
+};

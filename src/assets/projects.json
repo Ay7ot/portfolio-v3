@@ -13,7 +13,7 @@
     "name": "Findash",
     "type": "Dashboard",
     "sector": "Fintech",
-    "description": "A dashboard for a fintech product that allows users to track their finances, investments, savings, and other related information. Built for Fobework's Assessment as a full working frontend dashboard. (Login with any email and password)",
+    "description": "A dashboard for a fintech product that allows users to track their finances, investments, savings, and other related information. (Login with any email and password)",
     "github": "https://github.com/Ay7ot/findash",
     "live": "https://findash-tryve.netlify.app/",
     "deskimg": "/findash-desktop.png",
