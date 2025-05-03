@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+    <loc>https://teyeayo.web.app/</loc> 
+    <!-- Or your custom domain -->
+    <lastmod>2025-05-01</lastmod> <!-- Optional: Update date when content changes significantly -->
+    <priority>1.0</priority> <!-- Optional -->
+    </url>
+    <!-- If you add routing later (e.g., /about, /projects), add <url> entries for them too -->
+</urlset>

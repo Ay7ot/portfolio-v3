@@ -9,7 +9,7 @@ import Loader from "./Loader";
 import Aos from "aos";
 
 export default function App() {
-  const [theme, setTheme] = useState("");
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");

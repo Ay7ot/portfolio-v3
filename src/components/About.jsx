@@ -49,7 +49,7 @@ export default function About() {
                 </div> */}
         </div>
         <div>
-          <p className="flex flex-col gap-[1.25rem] text-[18px] md:text-[1.25rem] leading-[1.75rem] text-[#ffffff0d] dark:text-[#EFF1F5] md:gap-8 font-medium">
+          <p className="flex flex-col gap-[1.25rem] text-[18px] md:text-[1.25rem] leading-[1.75rem] text-[#404968] dark:text-[#EFF1F5] md:gap-8 font-medium">
             <span>
               This page belongs to Ayomide Ibiteye, a Software Developer from
               Nigeria. 😉
@@ -103,7 +103,7 @@ export default function About() {
           </a>
           <button
             onClick={copyEmail}
-            className="py-2 px-4 md:text-[18px] rounded-lg border-[1px] border-[#B9C0D4] min-[350px]:min-w-[100px] dark:border-[#ffffff1a] dark:bg-[#f2f2f21a] dark:text-white text-xs md:text-sm font-medium leading-5 text-[#ffffff0d]"
+            className="py-2 px-4 md:text-[18px] rounded-lg border-[1px] border-[#B9C0D4] min-[350px]:min-w-[100px] dark:border-[#ffffff1a] dark:bg-[#f2f2f21a] dark:text-white text-xs md:text-sm font-medium leading-5 text-[#404968]"
           >
             {copied ? "Copied" : "Copy Email"}
           </button>
