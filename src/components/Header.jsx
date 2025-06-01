@@ -74,7 +74,7 @@ export default function Header() {
                 />
               </svg>
               <p className="text-[40px] md:text-[3rem] tracking-[-0.96px] leading-[60px] text-white font-bold">
-                Edu-Tech
+               AI/ML
               </p>
             </div>
             <div className="h-[1.875rem] w-[1.875rem] md:w-[2.25rem] md:h-[2.25rem] rounded-full bg-[#009F77] text-base flex items-center justify-center text-white">
