@@ -99,6 +99,12 @@ export default function Projects() {
                     <p className="bg-[#F0F8FF] py-[2px] px-2 flex items-center justify-center rounded-[1rem] text-[#0067C2] text-xs font-medium leading-[18px]">
                       {project.type}
                     </p>
+                    <p className="text-[#7D89B0] mt-[-0.25rem] items-center leading-4 font-semibold">
+                      .
+                    </p>
+                    <p className="bg-[#F0F8FF] py-[2px] px-2 flex items-center justify-center rounded-[1rem] text-[#0067C2] text-xs font-medium leading-[18px]">
+                      {project.year}
+                    </p>
                   </div>
                   <p className="text-[#404968] dark:text-[#EFF1F5] text-sm md:text-base leading-[1.25rem] md:leading-[1.25rem]">
                     {project.description}
