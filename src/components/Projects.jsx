@@ -84,29 +84,31 @@ export default function Projects() {
                   </div>
                 )}
               </div>
-              <div className="md:w-[400px] md:h-[400px] pt-4 pb-3 px-3 flex flex-col items-start mt-auto h-full gap-4 rounded-[20px] border-[1px] border-[#DCDFEA] bg-[#fff] dark:border-[#ffffff1a] dark:bg-[#ffffff1a]">
+              <div className="md:w-[400px] md:h-[400px] pt-5 pb-3 px-3 flex flex-col items-start mt-auto h-full gap-4 rounded-[20px] border-[1px] border-[#DCDFEA] bg-[#fff] dark:border-[#ffffff1a] dark:bg-[#ffffff1a]">
                 <div className="flex flex-col w-full gap-4">
-                  <h3 className="text-[1.5rem] font-medium leading-8 text-[#111322] dark:text-[#FCFCFD] lg:text-[1.875rem]">
-                    {project.name}
-                  </h3>
-                  <div className="flex gap-[6px] items-center">
-                    <p className="bg-[#F0F8FF] py-[2px] px-2 flex items-center justify-center rounded-[1rem] text-[#0067C2] text-xs font-medium leading-[18px]">
-                      {project.sector}
-                    </p>
-                    <p className="text-[#7D89B0] mt-[-0.25rem] items-center leading-4 font-semibold">
-                      .
-                    </p>
-                    <p className="bg-[#F0F8FF] py-[2px] px-2 flex items-center justify-center rounded-[1rem] text-[#0067C2] text-xs font-medium leading-[18px]">
-                      {project.type}
-                    </p>
-                    <p className="text-[#7D89B0] mt-[-0.25rem] items-center leading-4 font-semibold">
-                      .
-                    </p>
-                    <p className="bg-[#F0F8FF] py-[2px] px-2 flex items-center justify-center rounded-[1rem] text-[#0067C2] text-xs font-medium leading-[18px]">
-                      {project.year}
-                    </p>
+                  <div className="flex flex-col gap-[6px]">
+                    <h3 className="text-[1.5rem] font-medium leading-8 text-[#111322] dark:text-[#FCFCFD] lg:text-[1.875rem]">
+                      {project.name}
+                    </h3>
+                    <div className="flex gap-[6px] items-center">
+                      <p className="bg-[#F0F8FF] py-[2px] px-2 flex items-center justify-center rounded-[1rem] text-[#0067C2] text-xs font-medium leading-[18px]">
+                        {project.sector}
+                      </p>
+                      <p className="text-[#7D89B0] mt-[-0.25rem] items-center leading-4 font-semibold">
+                        .
+                      </p>
+                      <p className="bg-[#F0F8FF] py-[2px] px-2 flex items-center justify-center rounded-[1rem] text-[#0067C2] text-xs font-medium leading-[18px]">
+                        {project.type}
+                      </p>
+                      <p className="text-[#7D89B0] mt-[-0.25rem] items-center leading-4 font-semibold">
+                        .
+                      </p>
+                      <p className="bg-[#F0F8FF] py-[2px] px-2 flex items-center justify-center rounded-[1rem] text-[#0067C2] text-xs font-medium leading-[18px]">
+                        {project.year}
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-[#404968] dark:text-[#EFF1F5] text-sm md:text-base leading-[1.25rem] md:leading-[1.25rem]">
+                  <p className="text-[#404968] dark:text-[#EFF1F5] text-sm md:text-sm leading-[1.25rem] md:leading-[1.25rem]">
                     {project.description}
                   </p>
                 </div>

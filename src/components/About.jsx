@@ -15,7 +15,7 @@ export default function About() {
 
   return (
     <section
-      className="pt-[2rem] pb-[6rem] md:pt-[4rem] md:pb-[8rem] w-full max-w-[1024px]"
+      className="pt-[2rem] pb-[6rem] md:pt-[4rem] md:pb-[8rem] w-full max-w-[1440px]"
       id="about"
     >
       <div className=" flex md:flex-row flex-col gap-4 md:gap-16 items-center w-full">
@@ -67,7 +67,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="bg-white dark:bg-[#ffffff0d] p-3 md:p-12 md:pb-4 rounded-[1.25rem] border-[1px] border-[#DCDFEA] dark:border-[#ffffff1a] mt-24 flex flex-col items-center justify-center">
+      <div className="bg-white dark:bg-[#ffffff0d] p-3 md:p-12 md:pb-4 rounded-[28px] border-[1px] border-[#DCDFEA] dark:border-[#ffffff1a] mt-24 flex flex-col items-center justify-center">
         <div className="bg-[#DBEEFF] flex items-center justify-center gap-2 py-[2px] px-2 rounded-[1rem] mt-24">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +113,7 @@ export default function About() {
             href="https://twitter.com/its_thepoe"
             target="_blank"
             rel="noreferrer"
-            className="text-sm md:text-[18px] flex items-center justify-center font-medium leading-5 md:leading-7 dark:text-white"
+            className="text-sm md:text-[18px] flex items-center justify-center font-medium leading-5 md:leading-7 text-[#393232] dark:text-white"
           >
             Designed by Dipo✌️
             <img

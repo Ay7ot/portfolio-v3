@@ -4,6 +4,45 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .ease-out-cubic {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+}
+
+.dock-tooltip {
+  position: absolute;
+  /* Icon base is ~2.25rem and scales up to 1.5x.
+     Move the tooltip high enough to always clear the max scaled size. */
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  line-height: 14px;
+  white-space: nowrap;
+  --tooltip-bg: #111322;
+  background: var(--tooltip-bg);
+  color: #ffffff;
+}
+
+.dock-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: var(--tooltip-bg) transparent transparent transparent;
+}
+
+.dock-tooltip-dark {
+  --tooltip-bg: #fcfcfd;
+  color: #111322;
+}
+
 @font-face {
   font-family: geist;
   src: url(./assets/fonts/GeistVariableVF.ttf);
@@ -34,6 +73,15 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  transition: background 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nav_button:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(9, 103, 188, 0.20) 71.35%), #00549E;
+    border-color: #5AA3E0;
+    box-shadow: 0px 0px 0px 1px #004A8A;
+  }
 }
 
 @media screen and (max-width: 320px) {
