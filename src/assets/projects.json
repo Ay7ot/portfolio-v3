@@ -22,6 +22,17 @@
     "mobileimg": "/dotzee-mobile.png"
   },
   {
+    "name": "Seams & Status",
+    "type": "Saas Tool",
+    "sector": "Fashion",
+    "year": "2025",
+    "description": "A smart invoicing solution built for Africa's growing freelance community. Our platform helps freelancers create professional invoices, streamline payment collection, and maintain clear payment records. Designed with simplicity in mind, Invoyce makes financial management effortless for freelancers across Africa and beyond.",
+    "github": "https://github.com/Ay7ot/seams-and-status",
+    "live": "https://seams-and-status.xyz/",
+    "deskimg": "/invoyce-desktop.png",
+    "mobileimg": "/invoyce-mobile.png"
+  },
+  {
     "name": "GasTracka",
     "type": "PWA",
     "sector": "Blockchain",
