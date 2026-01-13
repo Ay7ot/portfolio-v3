@@ -5,12 +5,42 @@ export default {
     extend: {
       animation: ["dark"],
       translate: ["dark"],
-      // ... other Tailwind utilities you might be using
     },
   },
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: {
+          DEFAULT: "var(--background)",
+          secondary: "var(--background-secondary)",
+          tertiary: "var(--background-tertiary)",
+          card: "var(--background-card)",
+          glass: "var(--background-glass)",
+          "glass-strong": "var(--background-glass-strong)",
+        },
+        foreground: {
+          DEFAULT: "var(--foreground)",
+          secondary: "var(--foreground-secondary)",
+          muted: "var(--foreground-muted)",
+          subtle: "var(--foreground-subtle)",
+          faint: "var(--foreground-faint)",
+        },
+        border: {
+          DEFAULT: "var(--border)",
+          muted: "var(--border-muted)",
+        },
+        accent: {
+          DEFAULT: "var(--accent)",
+          dark: "var(--accent-dark)",
+          hover: "var(--accent-hover)",
+          light: "var(--accent-light)",
+          lighter: "var(--accent-lighter)",
+        },
+        "dock-bg": "var(--dock-bg)",
+        "dock-item": "var(--dock-item-bg)",
+      },
+    },
     fontFamily: {
       shadows: ["Shadows Into Light Two", "cursive"],
     },

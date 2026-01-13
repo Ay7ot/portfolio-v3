@@ -1,5 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
 
+:root {
+  /* Backgrounds */
+  --background: #f9f9fb;
+  --background-secondary: #ffffff;
+  --background-tertiary: #EFF1F5;
+  --background-card: #ffffff;
+  --background-glass: #ffffff;
+  --background-glass-strong: #ffffff;
+  
+  /* Text */
+  --foreground: #111322;
+  --foreground-secondary: #30374F;
+  --foreground-muted: #404968;
+  --foreground-subtle: #4A5578;
+  --foreground-faint: #7D89B0;
+  
+  /* Borders */
+  --border: #DCDFEA;
+  --border-muted: #B9C0D4;
+  
+  /* Accent (brand blue) */
+  --accent: #0067C2;
+  --accent-dark: #05437A;
+  --accent-hover: #00549E;
+  --accent-light: #DBEEFF;
+  --accent-lighter: #F0F8FF;
+  
+  /* Dock */
+  --dock-bg: #FCFCFD;
+  --dock-item-bg: #EFF1F5;
+}
+
+.dark {
+  /* Backgrounds */
+  --background: #101010;
+  --background-secondary: #101010;
+  --background-tertiary: rgba(255, 255, 255, 0.1);
+  --background-card: rgba(255, 255, 255, 0.1);
+  --background-glass: rgba(255, 255, 255, 0.05);
+  --background-glass-strong: rgba(255, 255, 255, 0.1);
+  
+  /* Text */
+  --foreground: #ffffff;
+  --foreground-secondary: #FCFCFD;
+  --foreground-muted: #EFF1F5;
+  --foreground-subtle: #DCDFEA;
+  --foreground-faint: #B9C0D4;
+  
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.1);
+  --border-muted: rgba(255, 255, 255, 0.1);
+  
+  /* Accent stays same or adjust for dark */
+  --accent-light: #DBEEFF;
+  
+  /* Dock */
+  --dock-bg: #1C1C1C;
+  --dock-item-bg: #ffffff;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,6 +68,147 @@
   .ease-out-cubic {
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
+}
+
+/* ============================================
+   BACKGROUND CLASSES - Explicit for reliability
+   ============================================ */
+
+/* Main background */
+.bg-main {
+  background-color: #f9f9fb;
+}
+.dark .bg-main {
+  background-color: #101010;
+}
+
+/* Secondary background (solid - for page sections) */
+.bg-solid {
+  background-color: #ffffff;
+}
+.dark .bg-solid {
+  background-color: #101010;
+}
+
+/* Glass background (transparent overlay in dark) */
+.bg-glass {
+  background-color: #ffffff;
+}
+.dark .bg-glass {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Glass strong (more opaque overlay in dark) */
+.bg-glass-strong {
+  background-color: #ffffff;
+}
+.dark .bg-glass-strong {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Dock item backgrounds - must always be solid, never transparent */
+.dock-item-bg {
+  background-color: #EFF1F5;
+}
+.dark .dock-item-bg {
+  background-color: #ffffff;
+}
+
+.dock-container-bg {
+  background-color: #FCFCFD;
+}
+.dark .dock-container-bg {
+  background-color: #1C1C1C;
+}
+
+/* ============================================
+   BORDER CLASSES - Explicit for reliability
+   ============================================ */
+
+/* Standard border (subtle in dark mode) */
+.border-standard {
+  border-color: #DCDFEA;
+}
+.dark .border-standard {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Muted border */
+.border-muted {
+  border-color: #B9C0D4;
+}
+.dark .border-muted {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================
+   TEXT COLOR CLASSES - Explicit for reliability
+   ============================================ */
+
+/* Primary text */
+.text-primary {
+  color: #111322;
+}
+.dark .text-primary {
+  color: #ffffff;
+}
+
+/* Secondary text */
+.text-secondary {
+  color: #30374F;
+}
+.dark .text-secondary {
+  color: #FCFCFD;
+}
+
+/* Muted text */
+.text-muted {
+  color: #404968;
+}
+.dark .text-muted {
+  color: #EFF1F5;
+}
+
+/* Subtle text */
+.text-subtle {
+  color: #4A5578;
+}
+.dark .text-subtle {
+  color: #DCDFEA;
+}
+
+/* Faint text */
+.text-faint {
+  color: #7D89B0;
+}
+.dark .text-faint {
+  color: #B9C0D4;
+}
+
+/* Accent text */
+.text-accent-color {
+  color: #0067C2;
+}
+
+/* Accent text - lighter variant for dark mode */
+.text-accent-light {
+  color: #0067C2;
+}
+.dark .text-accent-light {
+  color: #72BCFD;
+}
+
+.text-accent-dark-color {
+  color: #05437A;
+}
+
+/* Accent backgrounds */
+.bg-accent-light-color {
+  background-color: #DBEEFF;
+}
+
+.bg-accent-lighter-color {
+  background-color: #F0F8FF;
 }
 
 .dock-tooltip {
@@ -100,8 +301,7 @@ body {
 
 .header_background {
   border-radius: 28px;
-  border: 1px solid var(--Gray-cool-200, #dcdfea);
-  /* background: var(--Gray-cool-50, #f9f9fb); */
+  border: 1px solid var(--border);
 }
 
 .project_images:nth-child(even) {
@@ -135,7 +335,7 @@ body {
 }
 
 .dark-loader {
-  background-color: "#101010";
+  background-color: var(--background);
 }
 
 .truckWrapper {
