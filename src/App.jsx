@@ -24,20 +24,27 @@ export default function App() {
   }, [theme]);
 
   useEffect(() => {
-    function hasWindowLoaded() {
-      return document.readyState === "complete";
+    const showContent = () => {
+      document.getElementById("content").style.display = "block";
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("content").scrollTo(0, 0);
+      Aos.init();
+    };
+
+    // Show content after 1.5s once window is loaded, or force show after 3s max
+    const maxTimeout = setTimeout(showContent, 3000);
+
+    if (document.readyState === "complete") {
+      clearTimeout(maxTimeout);
+      setTimeout(showContent, 1500);
+    } else {
+      window.addEventListener("load", () => {
+        clearTimeout(maxTimeout);
+        setTimeout(showContent, 1500);
+      });
     }
 
-    if (hasWindowLoaded()) {
-      setTimeout(() => {
-        document.getElementById("content").style.display = "block";
-
-        // Hide the loader
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("content").scrollTo(0, 0);
-        Aos.init();
-      }, 1500);
-    }
+    return () => clearTimeout(maxTimeout);
   }, []);
 
   console.log(theme);
@@ -98,17 +105,13 @@ export default function App() {
         className={`flex flex-col items-center dynamicHeight transition-all duration-300 ease-linear`}
       >
         <div
-          className="flex flex-col items-center w-full p-3 sm:p-6 bg-white dark:bg-[#101010]"
+          className="flex flex-col items-center w-full p-3 sm:p-6 bg-solid"
           id="home"
         >
           <Header />
         </div>
-        <div className="flex flex-col items-center w-full p-3 sm:p-6 bg-white dark:bg-[#101010]">
-          <Projects />
-        </div>
-        <div className="flex flex-col items-center bg-[#F9F9FB] dark:bg-[#101010] w-full p-3 sm:p-6 ">
-          <About />
-        </div>
+        <Projects />
+        <About />
         <div className="flex items-center justify-center w-full fixed p-3 bottom-0 sm:p-6 z-[6]">
           <TabBar theme={theme} setTheme={setTheme} />
         </div>

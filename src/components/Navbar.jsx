@@ -2,10 +2,10 @@ import Logo from "./Logo";
 
 export default function Navbar() {
     return (
-        <nav className="bg-[#fff] dark:bg-[#ffffff0d] rounded-[1rem] p-2 flex justify-between nav_border border-[#DCDFEA] border-[1px] dark:border-[#ffffff1a]">
+        <nav className="bg-glass rounded-[1rem] p-2 flex justify-between nav_border border-standard border-[1px]">
             <div className="flex items-center gap-3">
                 <Logo />
-                <p className="text-[18px] dark:text-white font-semibold leading-7">Ayomide</p>
+                <p className="text-[18px] text-primary font-semibold leading-7">Ayomide</p>
             </div>
             <div className="flex items-center justify-center">
                 <a

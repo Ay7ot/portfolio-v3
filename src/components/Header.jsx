@@ -112,16 +112,16 @@ export default function Header() {
 
   return (
     <div
-      className="header_background bg-[#f9f9fb] dark:bg-[#ffffff0d] dark:border-[#ffffff1a] p-3 pb-12 w-full max-w-[1024px]"
+      className="header_background bg-glass p-3 pb-12 w-full"
       data-aos-duration="1500"
       data-aos-easing="ease-in"
       data-aos-once="false"
       data-aos="fade-in"
     >
       <Navbar />
-      <div className="mt-32 md:mt-[252px] sm:px-12 md:px-24">
+      <div className="mt-32 md:mt-[252px] sm:px-12 md:px-24 max-w-[1280px] mx-auto">
         <div className="flex">
-          <div className="flex items-center justify-center gap-[6px] py-2 px-2 bg-[#DBEEFF] rounded-[1rem]">
+          <div className="flex items-center justify-center gap-[6px] py-1 px-2 bg-accent-light-color rounded-[1rem] border-[1px] border-[#72BCFD]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="8"
@@ -131,23 +131,23 @@ export default function Header() {
             >
               <circle cx="4" cy="4" r="3" fill="#0067C2" />
             </svg>
-            <p className="text-[#05437A] text-xs md:text-sm leading-5">
+            <p className="text-accent-dark-color text-xs leading-5">
               Yo! You've stumbled on something really cool✨
             </p>
           </div>
         </div>
-        <p className="mt-8 text-[18px] font-medium leading-7 text-[#4A5578] dark:text-[#DCDFEA]">
+        <p className="mt-8 text-[18px] font-medium leading-7 text-subtle">
           I&apos;m Ayomide Ibiteye, a passionate Software Developer based in
           Nigeria, also a lover of music, anime, and manga.
         </p>
-        <h1 className="text-[#30374F] relative dark:text-white text-[2.5rem] md:text-[3.75rem] lg:text-[4rem] font-bold leading-[3rem] md:leading-[4rem] lg:leading-[5rem] lg:tracking-[-1.5px] mt-3 ">
-          <span className="dark:[text-shadow:0px_5px_10px_rgba(0,84,158,0.12),0px_-5px_10px_rgba(255,255,255,0.05),0px_-5px_25px_rgba(255,255,255,0.20)]">
-            Software Developer for Companies in
+        <h1 className="text-secondary relative text-[2.5rem] md:text-[3.75rem] lg:text-[4rem] font-bold leading-[3rem] md:leading-[4rem] lg:leading-[5rem] lg:tracking-[-1.5px] mt-3 max-w-full">
+          <span>
+            Software Developer for Companies in{" "}
+            <span className="inline-block md:ml-4 mt-4 md:mt-0">
+              <HeaderAnimations />
+            </span>
           </span>
           <br className="sm:hidden" />
-          <span className="inline-block md:ml-4 mt-4 md:mt-0 md:absolute">
-            <HeaderAnimations />
-          </span>
         </h1>
       </div>
     </div>
