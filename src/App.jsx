@@ -97,7 +97,7 @@ export default function App() {
         className="flex items-center justify-center dynamicHeight"
         id="loader"
       >
-        <Loader theme={theme} />
+        <Loader />
       </div>
       <div
         style={{ display: "none" }}
