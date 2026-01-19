@@ -6,6 +6,12 @@ import "animate.css";
 
 export default function Projects() {
   const [showMore, setShowMore] = useState(false);
+  const [activeTab, setActiveTab] = useState("shipped");
+
+  // Filter projects based on active tab
+  const filteredProjects = projectsData.filter(
+    (project) => project.category === activeTab
+  );
 
   function showMoreProjects() {
     setShowMore(true);
@@ -40,11 +46,44 @@ export default function Projects() {
           From 2022 till now
         </span>
       </h2>
+      
+      {/* Tabs */}
+      <div className="flex items-center justify-center mt-8 md:mt-12">
+        <div className="inline-flex items-center gap-1 p-1 rounded-[20px] border-[1px] border-standard bg-glass-strong">
+          <button
+            onClick={() => {
+              setActiveTab("shipped");
+              setShowMore(false);
+            }}
+            className={`px-6 py-[10px] rounded-[16px] font-medium text-sm transition-all duration-300 ease-out ${
+              activeTab === "shipped"
+                ? "bg-accent-lighter-color text-accent-color shadow-sm"
+                : "text-faint hover:text-primary"
+            }`}
+          >
+            Shipped
+          </button>
+          <button
+            onClick={() => {
+              setActiveTab("playground");
+              setShowMore(false);
+            }}
+            className={`px-6 py-[10px] rounded-[16px] font-medium text-sm transition-all duration-300 ease-out ${
+              activeTab === "playground"
+                ? "bg-accent-lighter-color text-accent-color shadow-sm"
+                : "text-faint hover:text-primary"
+            }`}
+          >
+            Playground
+          </button>
+        </div>
+      </div>
+      
       <div
         className="flex flex-col gap-8 md:gap-16 mt-8 md:mt-16"
         id="projects"
       >
-        {projectsData.map((project, index) => {
+        {filteredProjects.map((project, index) => {
           return (
             <div
               key={index}
