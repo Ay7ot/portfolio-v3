@@ -56,7 +56,7 @@ export default function App() {
         <title>Ayomide Ibiteye - Software Developer Nigeria</title>
         <meta
           name="description"
-          content="Ayomide Ibiteye is a skilled Software Developer based in Nigeria, specializing in building web applications for Fintech, Edutech, and SaaS companies."
+          content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect shipping production systems end-to-end — from payment infrastructure and AI systems to multi-portal platforms for fintech, health-tech, and creator products."
         />
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
@@ -68,7 +68,7 @@ export default function App() {
         />
         <meta
           property="og:description"
-          content="Ayomide Ibiteye is a skilled Software Developer based in Nigeria, specializing in building web applications for Fintech, Edutech, and SaaS companies."
+          content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect shipping production systems end-to-end — from payment infrastructure and AI systems to multi-portal platforms for fintech, health-tech, and creator products."
         />
         <meta property="og:image" content="https://teyeayo.info/ayomide.jpg" />
         <meta
@@ -85,7 +85,7 @@ export default function App() {
         />
         <meta
           property="twitter:description"
-          content="Ayomide Ibiteye is a skilled Software Developer based in Nigeria, specializing in building web applications for Fintech, Edutech, and SaaS companies."
+          content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect shipping production systems end-to-end — from payment infrastructure and AI systems to multi-portal platforms for fintech, health-tech, and creator products."
         />
         <meta
           property="twitter:image"
