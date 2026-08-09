@@ -60,7 +60,7 @@ export default function App() {
         />
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://teyeayo.info/" />{" "}
+        <meta property="og:url" content="https://teyeayo.online/" />{" "}
         {/* Ensure this is your canonical URL */}
         <meta
           property="og:title"
@@ -70,14 +70,14 @@ export default function App() {
           property="og:description"
           content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect with 4+ years shipping production systems end-to-end, from architecture and payment infrastructure to AI systems, for fintech, health-tech, and creator products, built on Next.js, TypeScript, Node.js, and Python."
         />
-        <meta property="og:image" content="https://teyeayo.info/ayomide.jpg" />
+        <meta property="og:image" content="https://teyeayo.online/og-image.png" />
         <meta
           property="og:image:alt"
-          content="Ayomide Ibiteye's Portfolio Landing Page"
+          content="Ayomide Ibiteye, Technical Lead and Software Architect, shipping production systems end to end"
         />
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://teyeayo.info/" />{" "}
+        <meta property="twitter:url" content="https://teyeayo.online/" />{" "}
         {/* Ensure this is your canonical URL */}
         <meta
           property="twitter:title"
@@ -89,7 +89,7 @@ export default function App() {
         />
         <meta
           property="twitter:image"
-          content="https://teyeayo.info/ayomide.jpg"
+          content="https://teyeayo.online/og-image.png"
         />
         {/* You can add other meta tags like theme-color etc. here */}
       </Helmet>
