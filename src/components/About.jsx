@@ -55,7 +55,7 @@ export default function About() {
               I design and ship production systems end to end, from payment
               infrastructure and AI systems to multi-portal platforms for
               fintech, health-tech, and creator products, built on Next.js,
-              TypeScript, and Node.js.
+              TypeScript, Node.js, and Python.
             </span>
             <span>
               I operate as the technical decision-maker on teams, translating
