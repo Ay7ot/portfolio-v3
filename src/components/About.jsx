@@ -22,13 +22,12 @@ export default function About() {
             <div className="w-[250px] md:w-[300px] border-standard border-[1px] rounded-[1.25rem]">
               <img
                 src="/ayomide.jpg"
-                alt="A photo of Ayomide Ibiteye, Software Developer"
+                alt="A photo of Ayomide Ibiteye, Technical Lead and Software Architect"
                 className="w-full rounded-t-[1.25rem]"
               />
               <div className="bg-solid p-4 rounded-b-[1.25rem]">
                 <p className="font-shadows text-center text-primary">
-                  This is what I look like currently, selfies are not my thing
-                  but I try
+                  Ayomide Ibiteye, Technical Lead and Software Architect
                 </p>
               </div>
             </div>
@@ -49,18 +48,19 @@ export default function About() {
         <div>
           <p className="flex flex-col gap-[1.25rem] text-[18px] md:text-[1.25rem] leading-[1.75rem] text-muted md:gap-8 font-medium">
             <span>
-              This page belongs to Ayomide Ibiteye, a Software Developer from
-              Nigeria. 😉
+              This page belongs to Ayomide Ibiteye, a Technical Lead and
+              Software Architect from Nigeria.
             </span>
             <span>
-              I love building web applications and digital products that people
-              find delightful and easy to use. Experienced in collaborating
-              within agile teams (small, medium, and growing) to deliver
-              high-quality software solutions.
+              I design and ship production systems end to end, from payment
+              infrastructure and AI systems to multi-portal platforms for
+              fintech, health-tech, and creator products, built on Next.js,
+              TypeScript, and Node.js.
             </span>
             <span>
-              When I'm not coding, I spend my time making Afrobeats, reading
-              manga/watching anime, or working towards my yearly reading goal.
+              I operate as the technical decision-maker on teams, translating
+              product strategy into system design and sprint-ready engineering
+              plans across concurrent projects.
             </span>
           </p>
         </div>

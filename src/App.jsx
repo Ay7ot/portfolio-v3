@@ -53,10 +53,10 @@ export default function App() {
     <HelmetProvider>
       <Helmet>
         {/* <!-- Primary Meta Tags --> */}
-        <title>Ayomide Ibiteye - Software Developer Nigeria</title>
+        <title>Ayomide Ibiteye - Technical Lead & Software Architect</title>
         <meta
           name="description"
-          content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect shipping production systems end-to-end — from payment infrastructure and AI systems to multi-portal platforms for fintech, health-tech, and creator products."
+          content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect with 4+ years shipping production systems end-to-end, from architecture and payment infrastructure to AI systems, for fintech, health-tech, and creator products."
         />
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
@@ -64,11 +64,11 @@ export default function App() {
         {/* Ensure this is your canonical URL */}
         <meta
           property="og:title"
-          content="Ayomide Ibiteye - Software Developer Nigeria"
+          content="Ayomide Ibiteye - Technical Lead & Software Architect"
         />
         <meta
           property="og:description"
-          content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect shipping production systems end-to-end — from payment infrastructure and AI systems to multi-portal platforms for fintech, health-tech, and creator products."
+          content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect with 4+ years shipping production systems end-to-end, from architecture and payment infrastructure to AI systems, for fintech, health-tech, and creator products."
         />
         <meta property="og:image" content="https://teyeayo.info/ayomide.jpg" />
         <meta
@@ -81,11 +81,11 @@ export default function App() {
         {/* Ensure this is your canonical URL */}
         <meta
           property="twitter:title"
-          content="Ayomide Ibiteye - Software Developer Nigeria"
+          content="Ayomide Ibiteye - Technical Lead & Software Architect"
         />
         <meta
           property="twitter:description"
-          content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect shipping production systems end-to-end — from payment infrastructure and AI systems to multi-portal platforms for fintech, health-tech, and creator products."
+          content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect with 4+ years shipping production systems end-to-end, from architecture and payment infrastructure to AI systems, for fintech, health-tech, and creator products."
         />
         <meta
           property="twitter:image"

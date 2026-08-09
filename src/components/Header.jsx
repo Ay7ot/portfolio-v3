@@ -137,12 +137,12 @@ export default function Header() {
           </div>
         </div>
         <p className="mt-8 text-[18px] font-medium leading-7 text-subtle">
-          I&apos;m Ayomide Ibiteye, a passionate Software Developer based in
-          Nigeria, also a lover of music, anime, and manga.
+          I&apos;m Ayomide Ibiteye, a Technical Lead and Software Architect
+          based in Nigeria, shipping production systems end to end.
         </p>
         <h1 className="text-secondary relative text-[2.5rem] md:text-[3.75rem] lg:text-[4rem] font-bold leading-[3rem] md:leading-[4rem] lg:leading-[5rem] lg:tracking-[-1.5px] mt-3 max-w-full">
           <span>
-            Software Developer for Companies in{" "}
+            I build production software across{" "}
             <span className="inline-block md:ml-4 mt-4 md:mt-0">
               <HeaderAnimations />
             </span>
