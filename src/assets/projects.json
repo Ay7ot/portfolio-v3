@@ -12,6 +12,30 @@
     "mobileimg": "/entrecore-mobile.png"
   },
   {
+    "name": "Construction Check",
+    "type": "Saas Tool",
+    "sector": "Construction",
+    "year": "2026",
+    "category": "shipped",
+    "description": "An enterprise operations platform for professional construction cost estimating. It gives estimating firms, A/E practices, owners, government and independent estimators a client hub for intake, scoping and delivery, a practice platform for team workflows and quality control, and Agent Louie, an AI assistant that learns from every estimate to surface comps and market insights.",
+    "github": "",
+    "live": "https://constructioncheck.io",
+    "deskimg": "/construction-check-desktop.png",
+    "mobileimg": "/construction-check-mobile.png"
+  },
+  {
+    "name": "Ampli-fi",
+    "type": "Saas Tool",
+    "sector": "Fintech",
+    "year": "2026",
+    "category": "shipped",
+    "description": "An equipment sales and financing platform for equipment sellers, finance brokers and lenders. Salespeople build quotes with monthly payment options on the spot, buyers complete a digital credit application, and Ampli-fi runs automated credit checks and routes the deal to a lender marketplace, resubmitting to other lenders on a decline without new paperwork. Includes a Section 179 tax savings calculator.",
+    "github": "",
+    "live": "https://ampli-fi.io",
+    "deskimg": "/ampli-fi-desktop.png",
+    "mobileimg": "/ampli-fi-mobile.png"
+  },
+  {
     "name": "UrGadget",
     "type": "PWA",
     "sector": "Retail",
@@ -24,18 +48,6 @@
     "mobileimg": "/urgadget-mobile.png"
   },
   {
-    "name": "Ampli-Fi",
-    "type": "Website",
-    "sector": "Telecom",
-    "year": "2026",
-    "category": "shipped",
-    "description": "Website for Ampli-Fi, a San Antonio company that brings reliable cellular signal inside buildings where concrete, steel and Low-E glass block it. They capture the outside signal, amplify it and distribute it through indoor antennas, handling survey, design, install and commissioning for offices, hospitals, hotels, campuses, warehouses and data centers.",
-    "github": "",
-    "live": "https://ampli-fi.com",
-    "deskimg": "/ampli-fi-desktop.png",
-    "mobileimg": "/ampli-fi-mobile.png"
-  },
-  {
     "name": "Inboxd",
     "type": "Web App",
     "sector": "Creator Economy",
@@ -46,18 +58,6 @@
     "live": "https://inboxd.online",
     "deskimg": "/inboxd-desktop.png",
     "mobileimg": "/inboxd-mobile.png"
-  },
-  {
-    "name": "Construction Check",
-    "type": "Saas Tool",
-    "sector": "Construction",
-    "year": "2026",
-    "category": "shipped",
-    "description": "An enterprise operations platform for professional construction cost estimating. It gives estimating firms, A/E practices, owners, government and independent estimators a client hub for intake, scoping and delivery, a practice platform for team workflows and quality control, and Agent Louie, an AI assistant that learns from every estimate to surface comps and market insights.",
-    "github": "",
-    "live": "https://constructioncheck.io",
-    "deskimg": "/construction-check-desktop.png",
-    "mobileimg": "/construction-check-mobile.png"
   },
   {
     "name": "Invoyce",
