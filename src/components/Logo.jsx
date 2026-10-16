@@ -5,7 +5,7 @@ export default function Logo() {
             <div className="flex border-[1px] rounded-[8px]">
                 <div className="flex items-center justify-center p-4 logo_style">
                     <div className="p-1 rounded-full border-foreground-secondary border-[0.3px]">
-                        <img src="/dot.svg" />
+                        <img src="/dot.svg" alt="" width="8" height="8" />
                     </div>
                 </div>
             </div>

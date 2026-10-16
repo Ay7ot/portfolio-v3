@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/dot.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta name="theme-color" content="#f9f9fb" />
+    <link rel="canonical" href="https://teyeayo.online/" />
     <meta
       name="description"
+      content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect with 4+ years shipping production systems end-to-end, from architecture and payment infrastructure to AI systems, for fintech, health-tech, and creator products, built on Next.js, TypeScript, Node.js, and Python."
+    />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://teyeayo.online/" />
+    <meta property="og:title" content="Ayomide Ibiteye - Technical Lead &amp; Software Architect" />
+    <meta
+      property="og:description"
       content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect with 4+ years shipping production systems end-to-end, from architecture and payment infrastructure to AI systems, for fintech, health-tech, and creator products, built on Next.js, TypeScript, Node.js, and Python."
     />
     <meta property="og:image" content="https://teyeayo.online/og-image.png" />
@@ -15,39 +23,20 @@
       property="og:image:alt"
       content="Ayomide Ibiteye, Technical Lead and Software Architect, shipping production systems end to end"
     />
-    <meta property="og:url" content="https://teyeayo.online" />
-    <meta property="og:title" content="Ayomide" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://teyeayo.online/" />
+    <meta name="twitter:title" content="Ayomide Ibiteye - Technical Lead &amp; Software Architect" />
     <meta
-      property="og:description"
+      name="twitter:description"
       content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect with 4+ years shipping production systems end-to-end, from architecture and payment infrastructure to AI systems, for fintech, health-tech, and creator products, built on Next.js, TypeScript, Node.js, and Python."
     />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://teyeayo.online/ayomide.jpg" />
+    <meta name="twitter:image" content="https://teyeayo.online/og-image.png" />
     <meta name="google-site-verification" content="GXFFaj8MXncon8bZaB9gvOIe3uzCaD_0HRJr-yjEAMs" />
-    <title>Ayomide Ibiteye - Technical Lead & Software Architect</title>
+    <title>Ayomide Ibiteye - Technical Lead &amp; Software Architect</title>
   </head>
-  <body onload="closeLoader()">
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script>
-      function closeLoader() {
-        document.getElementById("content").style.display = "block";
-
-        // Hide the loader
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("content").scrollTo(0, 0);
-        AOS.init();
-      }
-      // window.onload = () => {
-      //   // Show the content after DOM content has loaded
-      //   document.getElementById("content").style.display = "block";
-
-      //   // Hide the loader
-      //   document.getElementById("loader").style.display = "none";
-      //   document.getElementById("content").scrollTo(0, 0);
-      //   AOS.init();
-      // };
-    </script>
   </body>
 </html>

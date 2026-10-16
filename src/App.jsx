@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 import About from "./components/About";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
 import TabBar from "./components/TabBar";
-import "animate.css";
+import "./animate-wobble.css";
 import Loader from "./Loader";
 import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function App() {
   const [theme, setTheme] = useState("dark");
@@ -23,84 +23,45 @@ export default function App() {
     }
   }, [theme]);
 
+  // The truck loader sits over the page as an overlay instead of keeping the
+  // page hidden, so the content paints straight away (good LCP) while the
+  // loader still plays on top for a moment before fading out.
+  const [loaderState, setLoaderState] = useState("visible");
+
   useEffect(() => {
-    const showContent = () => {
-      document.getElementById("content").style.display = "block";
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("content").scrollTo(0, 0);
+    document.documentElement.style.overflow = "hidden";
+    const hide = setTimeout(() => {
+      document.documentElement.style.overflow = "";
+      window.scrollTo(0, 0);
+      setLoaderState("fading");
       Aos.init();
+    }, 1500);
+    return () => {
+      clearTimeout(hide);
+      document.documentElement.style.overflow = "";
     };
-
-    // Show content after 1.5s once window is loaded, or force show after 3s max
-    const maxTimeout = setTimeout(showContent, 3000);
-
-    if (document.readyState === "complete") {
-      clearTimeout(maxTimeout);
-      setTimeout(showContent, 1500);
-    } else {
-      window.addEventListener("load", () => {
-        clearTimeout(maxTimeout);
-        setTimeout(showContent, 1500);
-      });
-    }
-
-    return () => clearTimeout(maxTimeout);
   }, []);
 
-  console.log(theme);
+  useEffect(() => {
+    if (loaderState !== "fading") return;
+    const remove = setTimeout(() => setLoaderState("gone"), 300);
+    return () => clearTimeout(remove);
+  }, [loaderState]);
 
   return (
-    <HelmetProvider>
-      <Helmet>
-        {/* <!-- Primary Meta Tags --> */}
-        <title>Ayomide Ibiteye - Technical Lead & Software Architect</title>
-        <meta
-          name="description"
-          content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect with 4+ years shipping production systems end-to-end, from architecture and payment infrastructure to AI systems, for fintech, health-tech, and creator products, built on Next.js, TypeScript, Node.js, and Python."
-        />
-        {/* <!-- Open Graph / Facebook --> */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://teyeayo.online/" />{" "}
-        {/* Ensure this is your canonical URL */}
-        <meta
-          property="og:title"
-          content="Ayomide Ibiteye - Technical Lead & Software Architect"
-        />
-        <meta
-          property="og:description"
-          content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect with 4+ years shipping production systems end-to-end, from architecture and payment infrastructure to AI systems, for fintech, health-tech, and creator products, built on Next.js, TypeScript, Node.js, and Python."
-        />
-        <meta property="og:image" content="https://teyeayo.online/og-image.png" />
-        <meta
-          property="og:image:alt"
-          content="Ayomide Ibiteye, Technical Lead and Software Architect, shipping production systems end to end"
-        />
-        {/* <!-- Twitter --> */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://teyeayo.online/" />{" "}
-        {/* Ensure this is your canonical URL */}
-        <meta
-          property="twitter:title"
-          content="Ayomide Ibiteye - Technical Lead & Software Architect"
-        />
-        <meta
-          property="twitter:description"
-          content="I'm Ayomide Ibiteye, a Technical Lead and Software Architect with 4+ years shipping production systems end-to-end, from architecture and payment infrastructure to AI systems, for fintech, health-tech, and creator products, built on Next.js, TypeScript, Node.js, and Python."
-        />
-        <meta
-          property="twitter:image"
-          content="https://teyeayo.online/og-image.png"
-        />
-        {/* You can add other meta tags like theme-color etc. here */}
-      </Helmet>
-      <div
-        className="flex items-center justify-center dynamicHeight"
-        id="loader"
-      >
-        <Loader />
-      </div>
-      <div
-        style={{ display: "none" }}
+    <>
+      {loaderState !== "gone" && (
+        <div
+          className={`fixed inset-0 z-[100] flex items-center justify-center bg-main transition-opacity duration-300 ease-linear ${
+            loaderState === "fading" ? "opacity-0 pointer-events-none" : ""
+          }`}
+          id="loader"
+          aria-hidden="true"
+        >
+          <Loader />
+        </div>
+      )}
+      <main
         id="content"
         className={`flex flex-col items-center dynamicHeight transition-all duration-300 ease-linear`}
       >
@@ -115,7 +76,7 @@ export default function App() {
         <div className="flex items-center justify-center w-full fixed p-3 bottom-0 sm:p-6 z-[6]">
           <TabBar theme={theme} setTheme={setTheme} />
         </div>
-      </div>
-    </HelmetProvider>
+      </main>
+    </>
   );
 }

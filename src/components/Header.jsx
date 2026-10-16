@@ -26,12 +26,7 @@ export default function Header() {
 
   function HeaderAnimations() {
     return (
-      <div
-        data-aos-duration="1500"
-        data-aos-easing="ease-in"
-        data-aos-once="false"
-        data-aos="fade-in"
-      >
+      <div>
         <Slider {...settings}>
           <div className="fin flex items-center gap-3">
             <div className="rounded-[12px] md:rounded-[1rem] px-3 md:px-4 py-1 md:py-2 flex items-center bg-[#00549E] justify-center gap-3">
@@ -111,13 +106,7 @@ export default function Header() {
   }
 
   return (
-    <div
-      className="header_background bg-glass p-3 pb-12 w-full"
-      data-aos-duration="1500"
-      data-aos-easing="ease-in"
-      data-aos-once="false"
-      data-aos="fade-in"
-    >
+    <div className="header_background bg-glass p-3 pb-12 w-full">
       <Navbar />
       <div className="mt-32 md:mt-[252px] sm:px-12 md:px-24 max-w-[1280px] mx-auto">
         <div className="flex">

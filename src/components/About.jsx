@@ -22,6 +22,10 @@ export default function About() {
             <div className="w-[250px] md:w-[300px] border-standard border-[1px] rounded-[1.25rem]">
               <img
                 src="/ayomide.jpg"
+                width="346"
+                height="346"
+                loading="lazy"
+                decoding="async"
                 alt="A photo of Ayomide Ibiteye, Technical Lead and Software Architect"
                 className="w-full rounded-t-[1.25rem]"
               />
@@ -148,6 +152,9 @@ export default function About() {
             Designed by Dipo✌️
             <img
               src="/dipo.png"
+              width="25"
+              height="24"
+              loading="lazy"
               alt="Link to designer Dipo's Twitter profile"
             />
           </a>

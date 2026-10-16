@@ -8,8 +8,8 @@
     "description": "An enterprise context layer that sits underneath the AI a business already uses. Entrecore learns what the company means by customer, revenue and churn, reconciles those definitions across finance, sales and product data, and traces every answer back to its source, so AI output is consistent and auditable instead of confidently wrong.",
     "github": "",
     "live": "https://entrecore.com",
-    "deskimg": "/entrecore-desktop.png",
-    "mobileimg": "/entrecore-mobile.png"
+    "deskimg": "/img/entrecore-desktop.webp",
+    "mobileimg": "/img/entrecore-mobile.webp"
   },
   {
     "name": "Construction Check",
@@ -20,8 +20,8 @@
     "description": "An enterprise operations platform for professional construction cost estimating. It gives estimating firms, A/E practices, owners, government and independent estimators a client hub for intake, scoping and delivery, a practice platform for team workflows and quality control, and Agent Louie, an AI assistant that learns from every estimate to surface comps and market insights.",
     "github": "",
     "live": "https://constructioncheck.io",
-    "deskimg": "/construction-check-desktop.png",
-    "mobileimg": "/construction-check-mobile.png"
+    "deskimg": "/img/construction-check-desktop.webp",
+    "mobileimg": "/img/construction-check-mobile.webp"
   },
   {
     "name": "Ampli-fi",
@@ -32,8 +32,8 @@
     "description": "An equipment sales and financing platform for equipment sellers, finance brokers and lenders. Salespeople build quotes with monthly payment options on the spot, buyers complete a digital credit application, and Ampli-fi runs automated credit checks and routes the deal to a lender marketplace, resubmitting to other lenders on a decline without new paperwork. Includes a Section 179 tax savings calculator.",
     "github": "",
     "live": "https://ampli-fi.io",
-    "deskimg": "/ampli-fi-desktop.png",
-    "mobileimg": "/ampli-fi-mobile.png"
+    "deskimg": "/img/ampli-fi-desktop.webp",
+    "mobileimg": "/img/ampli-fi-mobile.webp"
   },
   {
     "name": "UrGadget",
@@ -44,8 +44,8 @@
     "description": "Device inventory for electronics shops. Staff scan a barcode or type the IMEI to record a gadget in about 20 seconds, inspect and grade it, then sell it with an immutable receipt. Every device gets a passport of its full history, duplicates are blocked by IMEI or serial, and it works offline. Piloting with shops in Lagos and Abuja.",
     "github": "",
     "live": "https://urgadget.biz",
-    "deskimg": "/urgadget-desktop.png",
-    "mobileimg": "/urgadget-mobile.png"
+    "deskimg": "/img/urgadget-desktop.webp",
+    "mobileimg": "/img/urgadget-mobile.webp"
   },
   {
     "name": "Inboxd",
@@ -56,8 +56,8 @@
     "description": "A pay-per-reply platform connecting fans with creators. Fans pay a creator's set price to send a message and get a guaranteed reply within the deadline, or an automatic full refund. Creators keep 85% of every message with payouts within 24 hours, while Inboxd handles Stripe payments, refunds and reminders.",
     "github": "",
     "live": "https://inboxd.online",
-    "deskimg": "/inboxd-desktop.png",
-    "mobileimg": "/inboxd-mobile.png"
+    "deskimg": "/img/inboxd-desktop.webp",
+    "mobileimg": "/img/inboxd-mobile.webp"
   },
   {
     "name": "Invoyce",
@@ -68,8 +68,8 @@
     "description": "A smart invoicing solution built for Africa's growing freelance community. Our platform helps freelancers create professional invoices, streamline payment collection, and maintain clear payment records. Designed with simplicity in mind, Invoyce makes financial management effortless for freelancers across Africa and beyond.",
     "github": "https://github.com/Ay7ot/invoyce",
     "live": "https://invoyce.pro/",
-    "deskimg": "/invoyce-desktop.png",
-    "mobileimg": "/invoyce-mobile.png"
+    "deskimg": "/img/invoyce-desktop.webp",
+    "mobileimg": "/img/invoyce-mobile.webp"
   },
   {
     "name": "SnapBounty",
@@ -80,8 +80,8 @@
     "description": "A decentralized Web3 marketplace platform powered by Base blockchain. Users can discover and complete bounties, share content, and earn rewards through secure on-chain transactions.",
     "github": "https://github.com/Ay7ot/snapbounty",
     "live": "https://snapbounty.online",
-    "deskimg": "/snapbounty-desktop.PNG",
-    "mobileimg": "/snapbounty-mobile.JPG"
+    "deskimg": "/img/snapbounty-desktop.webp",
+    "mobileimg": "/img/snapbounty-mobile.webp"
   },
   {
     "name": "Solxlog",
@@ -92,8 +92,8 @@
     "description": "A blockchain transaction logging and monitoring platform for Solana. Track, analyze, and visualize on-chain activities with real-time data and intuitive insights.",
     "github": "https://github.com/Ay7ot/solxlog",
     "live": "https://solxlog.live",
-    "deskimg": "/solxlog-desktop.PNG",
-    "mobileimg": "/solxlog-mobile.JPG"
+    "deskimg": "/img/solxlog-desktop.webp",
+    "mobileimg": "/img/solxlog-mobile.webp"
   },
   {
     "name": "Envsane",
@@ -104,8 +104,8 @@
     "description": "A lightweight CLI tool for validating and comparing environment files. Catch missing variables, empty values, case mismatches, and duplicates before deployment. Configuration-free and language-agnostic.",
     "github": "https://github.com/Ay7ot/envsane",
     "live": "https://envsane.online",
-    "deskimg": "/envsane-desktop.PNG",
-    "mobileimg": "/envsane-mobile.JPG"
+    "deskimg": "/img/envsane-desktop.webp",
+    "mobileimg": "/img/envsane-mobile.webp"
   },
   {
     "name": "Dotzee",
@@ -116,8 +116,8 @@
     "description": "Intuitive State Management for React. A Pinia-inspired state management solution combining Vue's reactivity system with React's component model for intuitive, type-safe state management.",
     "github": "https://github.com/Ayatpunch/dotzee",
     "live": "https://dotzee.vercel.app/",
-    "deskimg": "/dotzee-desktop.png",
-    "mobileimg": "/dotzee-mobile.png"
+    "deskimg": "/img/dotzee-desktop.webp",
+    "mobileimg": "/img/dotzee-mobile.webp"
   },
   {
     "name": "Seams & Status",
@@ -128,8 +128,8 @@
     "description": "A smart invoicing solution built for Africa's growing freelance community. Our platform helps freelancers create professional invoices, streamline payment collection, and maintain clear payment records. Designed with simplicity in mind, Invoyce makes financial management effortless for freelancers across Africa and beyond.",
     "github": "https://github.com/Ay7ot/seams-and-status",
     "live": "https://seams-and-status.xyz/",
-    "deskimg": "/invoyce-desktop.png",
-    "mobileimg": "/invoyce-mobile.png"
+    "deskimg": "/img/invoyce-desktop.webp",
+    "mobileimg": "/img/invoyce-mobile.webp"
   },
   {
     "name": "GasTracka",
@@ -140,8 +140,8 @@
     "description": "A Progressive Web App that allows users to track their gas prices for various major blockchains.",
     "github": "https://github.com/Ay7ot/GasTracka",
     "live": "https://gastracka.netlify.app/",
-    "deskimg": "/gastracka-desktop.jpg",
-    "mobileimg": "/gastracka-mobile.jpg"
+    "deskimg": "/img/gastracka-desktop.webp",
+    "mobileimg": "/img/gastracka-mobile.webp"
   },
   {
     "name": "ResuMate",
@@ -152,8 +152,8 @@
     "description": "A comprehensive resume templating web application that empowers users to create polished and professional resumes effortlessly.",
     "github": "https://github.com/Ay7ot/resumate",
     "live": "https://resumate-io.web.app/",
-    "deskimg": "/resumate-desktop.png",
-    "mobileimg": "/resumate-mobile.png"
+    "deskimg": "/img/resumate-desktop.webp",
+    "mobileimg": "/img/resumate-mobile.webp"
   },
   {
     "name": "GreenGrow",
@@ -164,8 +164,8 @@
     "description": "Smart Farming Solutions for a Sustainable Future. Revolutionize your agricultural practices with IoT sensors and data analytics that increase yields while reducing resource consumption.",
     "github": "https://github.com/Ay7ot",
     "live": "https://greengrow.netlify.app/",
-    "deskimg": "/greengrow-desktop.png",
-    "mobileimg": "/greengrow-mobile.png"
+    "deskimg": "/img/greengrow-desktop.webp",
+    "mobileimg": "/img/greengrow-mobile.webp"
   },
   {
     "name": "ShopWithSteeze",
@@ -176,8 +176,8 @@
     "description": "Shop with Steeze, where sophistication meets style. Discover our exquisite collection of men's jewelry, meticulously crafted to elevate your everyday look. ",
     "github": "https://github.com/Ay7ot/ShopWithSteeze",
     "live": "https://shopwithsteeze.web.app/",
-    "deskimg": "/steeze-desktop.png",
-    "mobileimg": "/steeze-mobile.PNG"
+    "deskimg": "/img/steeze-desktop.webp",
+    "mobileimg": "/img/steeze-mobile.webp"
   },
   {
     "name": "10k MRR",
@@ -188,8 +188,8 @@
     "description": "A one-page dashboard for a SaaS product that allows showcase their product and track their revenue, customers, and other metrics.",
     "github": "https://github.com/Ay7ot",
     "live": "https://10k-mrr.netlify.app/",
-    "deskimg": "/mrr-desktop.png",
-    "mobileimg": "/mrr-mobile.png"
+    "deskimg": "/img/mrr-desktop.webp",
+    "mobileimg": "/img/mrr-mobile.webp"
   },
   {
     "name": "Trivia",
@@ -200,7 +200,7 @@
     "description": "A simple quiz app with varieties of sections including politics, geography, arts, philosophy etc.",
     "github": "https://github.com/Ay7ot/spandors-trivia",
     "live": "https://spandors-trivia.netlify.app/",
-    "deskimg": "/trivia-desktop.png"
+    "deskimg": "/img/trivia-desktop.webp"
   },
   {
     "name": "Tenzie",
@@ -211,7 +211,7 @@
     "description": "A tenzie web based browser game built to practice basic react state. Players roll the dice until its all the same number on all available dies. Best time and no. of rolls are saved to local storage.",
     "github": "https://github.com/Ay7ot/tenzie/",
     "live": "https://spandors-tenzie.netlify.app/",
-    "deskimg": "/tenzie-desktop.png"
+    "deskimg": "/img/tenzie-desktop.webp"
   },
   {
     "name": "BookWormz",
@@ -222,8 +222,8 @@
     "description": "An open book library where users can search for books, read books, download and download them.",
     "github": "https://github.com/Ay7ot/bookwormz/",
     "live": "https://bookwormz.netlify.app/",
-    "deskimg": "/bookWormz-deskstop.png",
-    "mobileimg": "/bookWormz-mobile.png"
+    "deskimg": "/img/bookWormz-deskstop.webp",
+    "mobileimg": "/img/bookWormz-mobile.webp"
   },
   {
     "name": "Movie Pitch",
@@ -234,7 +234,7 @@
     "description": "A simple AI web app done with openaiAPI. Users would input a single sentence for a movie and they would get back a movie title, synopsis, actors and even a poster.",
     "github": "https://github.com/Ay7ot/moviePitch/",
     "live": "https://movie-synopsis.netlify.app/",
-    "deskimg": "/moviePitch-desktop.png",
-    "mobileimg": "/moviePitch-mobile.png"
+    "deskimg": "/img/moviePitch-desktop.webp",
+    "mobileimg": "/img/moviePitch-mobile.webp"
   }
 ]
