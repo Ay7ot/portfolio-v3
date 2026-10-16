@@ -12,6 +12,18 @@
     "mobileimg": "/entrecore-mobile.png"
   },
   {
+    "name": "UrGadget",
+    "type": "PWA",
+    "sector": "Retail",
+    "year": "2026",
+    "category": "shipped",
+    "description": "Device inventory for electronics shops. Scan a barcode or type the IMEI or serial, confirm the match and add the cost to record any gadget in about 20 seconds, with a device passport per item and a receipt per sale. Offline-first with duplicate blocking, piloting with shops in Lagos and Abuja.",
+    "github": "",
+    "live": "https://urgadget.biz",
+    "deskimg": "/urgadget-desktop.png",
+    "mobileimg": "/urgadget-mobile.png"
+  },
+  {
     "name": "Ampli-Fi",
     "type": "Website",
     "sector": "Telecom",
