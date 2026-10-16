@@ -150,6 +150,7 @@ export default function Projects() {
                   </p>
                 </div>
                 <div className="mt-auto flex flex-col gap-4 w-full">
+                  {project.github && (
                   <a
                     href={project.github}
                     target="_blank"
@@ -176,6 +177,7 @@ export default function Projects() {
                       />
                     </svg>
                   </a>
+                  )}
                   <a
                     href={project.live}
                     target="_blank"

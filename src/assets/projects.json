@@ -1,5 +1,65 @@
 [
   {
+    "name": "Entrecore",
+    "type": "Saas Tool",
+    "sector": "Data & AI",
+    "year": "2026",
+    "category": "shipped",
+    "description": "An enterprise context layer that sits underneath the AI a business already uses. Entrecore learns what the company means by customer, revenue and churn, reconciles those definitions across finance, sales and product data, and traces every answer back to its source, so AI output is consistent and auditable instead of confidently wrong.",
+    "github": "",
+    "live": "https://entrecore.com",
+    "deskimg": "/entrecore-desktop.png",
+    "mobileimg": "/entrecore-mobile.png"
+  },
+  {
+    "name": "UrGadget",
+    "type": "PWA",
+    "sector": "Retail",
+    "year": "2026",
+    "category": "shipped",
+    "description": "Device inventory for electronics shops. Staff scan a barcode or type the IMEI to record a gadget in about 20 seconds, inspect and grade it, then sell it with an immutable receipt. Every device gets a passport of its full history, duplicates are blocked by IMEI or serial, and it works offline. Piloting with shops in Lagos and Abuja.",
+    "github": "",
+    "live": "https://urgadget.biz",
+    "deskimg": "/urgadget-desktop.png",
+    "mobileimg": "/urgadget-mobile.png"
+  },
+  {
+    "name": "Ampli-Fi",
+    "type": "Website",
+    "sector": "Telecom",
+    "year": "2026",
+    "category": "shipped",
+    "description": "Website for Ampli-Fi, a San Antonio company that brings reliable cellular signal inside buildings where concrete, steel and Low-E glass block it. They capture the outside signal, amplify it and distribute it through indoor antennas, handling survey, design, install and commissioning for offices, hospitals, hotels, campuses, warehouses and data centers.",
+    "github": "",
+    "live": "https://ampli-fi.com",
+    "deskimg": "/ampli-fi-desktop.png",
+    "mobileimg": "/ampli-fi-mobile.png"
+  },
+  {
+    "name": "Inboxd",
+    "type": "Web App",
+    "sector": "Creator Economy",
+    "year": "2026",
+    "category": "shipped",
+    "description": "A pay-per-reply platform connecting fans with creators. Fans pay a creator's set price to send a message and get a guaranteed reply within the deadline, or an automatic full refund. Creators keep 85% of every message with payouts within 24 hours, while Inboxd handles Stripe payments, refunds and reminders.",
+    "github": "",
+    "live": "https://inboxd.online",
+    "deskimg": "/inboxd-desktop.png",
+    "mobileimg": "/inboxd-mobile.png"
+  },
+  {
+    "name": "Construction Check",
+    "type": "Saas Tool",
+    "sector": "Construction",
+    "year": "2026",
+    "category": "shipped",
+    "description": "An enterprise operations platform for professional construction cost estimating. It gives estimating firms, A/E practices, owners, government and independent estimators a client hub for intake, scoping and delivery, a practice platform for team workflows and quality control, and Agent Louie, an AI assistant that learns from every estimate to surface comps and market insights.",
+    "github": "",
+    "live": "https://constructioncheck.io",
+    "deskimg": "/construction-check-desktop.png",
+    "mobileimg": "/construction-check-mobile.png"
+  },
+  {
     "name": "Invoyce",
     "type": "Saas Tool",
     "sector": "Fintech",
