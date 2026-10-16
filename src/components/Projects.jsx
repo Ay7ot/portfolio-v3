@@ -1,8 +1,5 @@
 import { useState } from "react";
 import projectsData from "../assets/projects.json";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import "animate.css";
 
 export default function Projects() {
   const [showMore, setShowMore] = useState(false);
@@ -22,15 +19,6 @@ export default function Projects() {
     setShowMore(false);
     // setProjects(projectsData.slice(0, 3))
   }
-
-  useGSAP(() => {
-    gsap.to(".project", {
-      y: 50,
-      ease: "slow(0.7, 0.7, false)",
-      duration: 2.5,
-      stagger: 0.25,
-    });
-  });
 
   return (
     <section className="w-full bg-solid" id="projectsBody">
@@ -87,6 +75,7 @@ export default function Projects() {
           return (
             <div
               key={index}
+              style={{ animationDelay: `${index * 0.25}s` }}
               className={`flex flex-col gap-3 md:gap-8 md:flex-row-reverse md:justify-end ${
                 !showMore && index >= 5 ? "hidden" : ""
               } project`}
@@ -105,6 +94,12 @@ export default function Projects() {
                 >
                   <img
                     src={project.deskimg}
+                    srcSet={`${project.deskimg.replace(/\.webp$/, "-640.webp")} 640w, ${project.deskimg} 1200w`}
+                    sizes="(min-width: 768px) 50vw, 66vw"
+                    width="1200"
+                    height="750"
+                    loading="lazy"
+                    decoding="async"
                     alt={`Desktop screenshot of the ${project.name} ${project.type} project`}
                     className="h-full object-cover w-full rounded-lg md:rounded-[1.5rem]"
                   />
@@ -115,6 +110,10 @@ export default function Projects() {
                   >
                     <img
                       src={project.mobileimg}
+                      width="400"
+                      height="866"
+                      loading="lazy"
+                      decoding="async"
                       alt={`Mobile screenshot of the ${project.name} ${project.type} project`}
                       className="h-full object-cover w-full rounded-lg md:rounded-[1.5rem] max-w-[200px]"
                     />
