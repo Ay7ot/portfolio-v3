@@ -48,6 +48,18 @@
     "mobileimg": "/inboxd-mobile.png"
   },
   {
+    "name": "Construction Check",
+    "type": "Saas Tool",
+    "sector": "Construction",
+    "year": "2026",
+    "category": "shipped",
+    "description": "An enterprise operations platform for professional construction cost estimating. It gives estimating firms, A/E practices, owners, government and independent estimators a client hub for intake, scoping and delivery, a practice platform for team workflows and quality control, and Agent Louie, an AI assistant that learns from every estimate to surface comps and market insights.",
+    "github": "",
+    "live": "https://constructioncheck.io",
+    "deskimg": "/construction-check-desktop.png",
+    "mobileimg": "/construction-check-mobile.png"
+  },
+  {
     "name": "Invoyce",
     "type": "Saas Tool",
     "sector": "Fintech",
