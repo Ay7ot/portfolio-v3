@@ -12,6 +12,18 @@
     "mobileimg": "/img/outreach-agent-mobile.webp"
   },
   {
+    "name": "TrimFitt",
+    "type": "Web App",
+    "sector": "Healthcare",
+    "year": "2026",
+    "category": "shipped",
+    "description": "The patient portal for TrimFitt, a physician-led telehealth practice offering GLP-1 weight loss, ketamine therapy, NAD+ and longevity protocols. New patients share their goals and health details and complete a screening in about three minutes, then create a secure account to manage follow-ups with their provider, refills and tracking for medication shipped to their home. HIPAA compliant.",
+    "github": "",
+    "live": "https://patient.trimfitt.com",
+    "deskimg": "/img/trimfitt-patient-desktop.webp",
+    "mobileimg": "/img/trimfitt-patient-mobile.webp"
+  },
+  {
     "name": "Entrecore",
     "type": "Saas Tool",
     "sector": "Data & AI",
