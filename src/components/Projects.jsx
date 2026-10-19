@@ -177,6 +177,7 @@ export default function Projects() {
                     </svg>
                   </a>
                   )}
+                  {project.live && (
                   <a
                     href={project.live}
                     target="_blank"
@@ -203,6 +204,7 @@ export default function Projects() {
                       />
                     </svg>
                   </a>
+                  )}
                 </div>
               </div>
             </div>

@@ -1,5 +1,17 @@
 [
   {
+    "name": "Outreach Agent",
+    "type": "Saas Tool",
+    "sector": "Data & AI",
+    "year": "2026",
+    "category": "shipped",
+    "description": "A human-in-the-loop prospecting engine for an independent engineering practice. Scheduled workers find AI-automation agencies whose hiring and delivery signals show a capacity gap, Claude scores each one against a contact gate and drafts a personalised first touch, and every draft lands in an approval queue as a Gmail draft. Nothing sends on its own: the operator approves and presses Send, while follow-ups, reply classification and suggested responses keep the conversation moving.",
+    "github": "",
+    "live": "",
+    "deskimg": "/img/outreach-agent-desktop.webp",
+    "mobileimg": "/img/outreach-agent-mobile.webp"
+  },
+  {
     "name": "Entrecore",
     "type": "Saas Tool",
     "sector": "Data & AI",
