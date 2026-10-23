@@ -33,19 +33,24 @@ export default function Header() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
-                height="32"
-                viewBox="0 0 40 32"
+                height="36"
+                viewBox="0 0 24 22"
                 fill="none"
               >
                 <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M8 0H32C36.4183 0 40 3.58172 40 8V18C40 19.1046 39.1046 20 38 20H32C27.5817 20 24 23.5817 24 28V30C24 31.1046 23.1046 32 22 32H8C3.58172 32 0 28.4183 0 24V8C0 3.58172 3.58172 0 8 0ZM8 6C9.10457 6 10 6.89543 10 8C10 9.10457 9.10457 10 8 10C6.89543 10 6 9.10457 6 8C6 6.89543 6.89543 6 8 6ZM24 16C24 13.7909 22.2091 12 20 12C17.7909 12 16 13.7909 16 16C16 18.2091 17.7909 20 20 20C22.2091 20 24 18.2091 24 16ZM34.0003 23.9998L34.4422 23.5579C35.6626 22.3375 37.6413 22.3375 38.8616 23.5579C40.082 24.7783 40.082 26.7569 38.8616 27.9773L35.768 31.0709C34.7917 32.0472 33.2088 32.0472 32.2325 31.0709L29.1389 27.9773C27.9185 26.7569 27.9185 24.7783 29.1389 23.5579C30.3593 22.3375 32.338 22.3375 33.5583 23.5579L34.0003 23.9998Z"
+                  d="M12 21.35 10.55 20.03C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35Z"
                   fill="white"
+                />
+                <path
+                  d="M4 11h4l1.5-3 3 6 1.5-3h6"
+                  stroke="#00549E"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
               <p className="text-[40px] md:text-[3rem] tracking-[-0.96px] leading-[60px] text-white font-bold">
-                Fintech
+                Healthtech
               </p>
             </div>
             <div className="h-[1.875rem] w-[1.875rem] md:w-[2.25rem] md:h-[2.25rem] rounded-full bg-[#00549E] text-base flex items-center justify-center text-white">
@@ -93,7 +98,7 @@ export default function Header() {
                 />
               </svg>
               <p className="text-[40px] md:text-[3rem] tracking-[-0.96px] leading-[60px] text-white font-bold">
-                SAAS
+                Sales
               </p>
             </div>
             <div className="h-[1.875rem] w-[1.875rem] md:w-[2.25rem] md:h-[2.25rem] rounded-full bg-[#9E3700] text-base flex items-center justify-center text-white">
