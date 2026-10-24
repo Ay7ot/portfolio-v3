@@ -56,9 +56,9 @@ export default function About() {
               Software Architect from Nigeria.
             </span>
             <span>
-              I design and ship production systems end to end, from AI/ML
-              systems and data pipelines to multi-portal platforms for
-              healthtech, AI, and sales products, built on Next.js,
+              I design and ship production systems end to end, from machine
+              learning and data pipelines to multi-portal platforms for
+              health-tech, AI/ML, and sales products, built on Next.js,
               TypeScript, Node.js, and Python.
             </span>
             <span>

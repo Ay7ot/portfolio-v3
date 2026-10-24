@@ -49,8 +49,8 @@ export default function Header() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <p className="text-[40px] md:text-[3rem] tracking-[-0.96px] leading-[60px] text-white font-bold">
-                Healthtech
+              <p className="text-[40px] md:text-[3rem] tracking-[-0.96px] leading-[60px] text-white font-bold whitespace-nowrap">
+                Health-Tech
               </p>
             </div>
             <div className="h-[1.875rem] w-[1.875rem] md:w-[2.25rem] md:h-[2.25rem] rounded-full bg-[#00549E] text-base flex items-center justify-center text-white">
@@ -73,7 +73,7 @@ export default function Header() {
                   fill="white"
                 />
               </svg>
-              <p className="text-[40px] md:text-[3rem] tracking-[-0.96px] leading-[60px] text-white font-bold">
+              <p className="text-[40px] md:text-[3rem] tracking-[-0.96px] leading-[60px] text-white font-bold whitespace-nowrap">
                AI/ML
               </p>
             </div>
@@ -97,7 +97,7 @@ export default function Header() {
                   fill="white"
                 />
               </svg>
-              <p className="text-[40px] md:text-[3rem] tracking-[-0.96px] leading-[60px] text-white font-bold">
+              <p className="text-[40px] md:text-[3rem] tracking-[-0.96px] leading-[60px] text-white font-bold whitespace-nowrap">
                 Sales
               </p>
             </div>
