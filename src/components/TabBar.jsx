@@ -154,8 +154,8 @@ export default function TabBar({ theme, setTheme }) {
                                         <circle cx="24.4998" cy="24.2" r="2.2" fill="white"/>
                                     </g>
                                     <defs>
-                                        <filter id="filter0_d_7538_132359" x="0.299805" y="0" width="48.4004" height="48.4004" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <filter id="filter0_d_7538_132359" x="0.299805" y="0" width="48.4004" height="48.4004" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                                        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                                         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                                         <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_7538_132359"/>
                                         <feOffset/>
@@ -204,8 +204,8 @@ export default function TabBar({ theme, setTheme }) {
                                         <circle cx="24.4998" cy="24.2" r="2.2" fill="white"/>
                                     </g>
                                     <defs>
-                                        <filter id="filter0_d_7538_132359" x="0.299805" y="0" width="48.4004" height="48.4004" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <filter id="filter0_d_7538_132359" x="0.299805" y="0" width="48.4004" height="48.4004" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                                        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                                         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                                         <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_7538_132359"/>
                                         <feOffset/>
@@ -254,8 +254,8 @@ export default function TabBar({ theme, setTheme }) {
                                         <circle cx="24.4998" cy="24.2" r="2.2" fill="white"/>
                                     </g>
                                     <defs>
-                                        <filter id="filter0_d_7538_132359" x="0.299805" y="0" width="48.4004" height="48.4004" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <filter id="filter0_d_7538_132359" x="0.299805" y="0" width="48.4004" height="48.4004" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                                        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                                         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                                         <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_7538_132359"/>
                                         <feOffset/>
