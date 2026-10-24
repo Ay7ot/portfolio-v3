@@ -1,7 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import { loadFonts } from './fonts.js'
 import './index.css'
+
+loadFonts()
 
 const root = document.getElementById('root')
 const app = (
