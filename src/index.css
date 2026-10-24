@@ -243,19 +243,16 @@
   color: #111322;
 }
 
+/* Geist and Shadows Into Light Two are loaded from src/fonts.js so text paints
+   without waiting on them. Until Geist arrives, this local face stands in,
+   scaled to Geist's widths and line metrics so the swap barely moves text. */
 @font-face {
-  font-family: geist;
-  src: url(./assets/fonts/GeistVariableVF.woff2) format("woff2"),
-    url(./assets/fonts/GeistVariableVF.ttf) format("truetype");
-  font-weight: 100 900;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Shadows Into Light Two";
-  src: url(./assets/fonts/ShadowsIntoLightTwo-latin.woff2) format("woff2");
-  font-weight: 400;
-  font-display: swap;
+  font-family: geist-fallback;
+  src: local("Arial"), local("Liberation Sans"), local("Helvetica");
+  size-adjust: 106%;
+  ascent-override: 86.8%;
+  descent-override: 20.8%;
+  line-gap-override: 9.4%;
 }
 
 html {
@@ -270,7 +267,7 @@ html {
 }
 
 body {
-  font-family: geist;
+  font-family: geist, geist-fallback, sans-serif;
 }
 
 .nav_button {
@@ -335,119 +332,56 @@ body {
   }
 }
 
-.loader {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--background);
-}
-
-.truckWrapper {
-  width: 200px;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
-  justify-content: flex-end;
-  overflow-x: hidden;
-}
-/* truck upper body */
-.truckBody {
-  width: 130px;
-  height: fit-content;
-  margin-bottom: 6px;
-  animation: motion 1s linear infinite;
-}
-/* truck suspension animation*/
-@keyframes motion {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(3px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-/* truck's tires */
-.truckTires {
-  width: 130px;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 10px 0px 15px;
-  position: absolute;
-  bottom: 0;
-}
-.truckTires svg {
-  width: 24px;
-}
-
-.road {
-  width: 100%;
-  height: 1.5px;
-  background-color: #282828;
-  position: relative;
-  bottom: 0;
-  align-self: flex-end;
-  border-radius: 3px;
-}
-.road::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  background-color: #282828;
-  right: -50%;
-  border-radius: 3px;
-  animation: roadAnimation 1.4s linear infinite;
-  border-left: 10px solid white;
-}
-.road::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 100%;
-  background-color: #282828;
-  right: -65%;
-  border-radius: 3px;
-  animation: roadAnimation 1.4s linear infinite;
-  border-left: 4px solid white;
-}
-
-.lampPost {
-  position: absolute;
-  bottom: 0;
-  right: -90%;
-  height: 90px;
-  animation: roadAnimation 1.4s linear infinite;
-}
-
-@keyframes roadAnimation {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-350px);
-  }
-}
-
 .dock-item {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.slick-track {
-  max-width: 350px !important;
+/* Sector ticker under the headline: each slide holds for 1.6s, then the
+   track slides up over 0.3s. The fourth slide repeats the first, so jumping
+   back to 0 at the end of the loop is invisible. */
+.sector-ticker {
+  display: block;
+  height: 70px;
+  overflow: hidden;
 }
-.slick-slide div {
-  display: flex !important;
+.sector-track {
+  display: flex;
+  flex-direction: column;
+  animation: sector-cycle 5.7s infinite;
+}
+.sector-slide {
+  height: 70px;
+  flex-shrink: 0;
+}
+@media (min-width: 768px) {
+  .sector-ticker,
+  .sector-slide {
+    height: 78px;
+  }
+}
+@keyframes sector-cycle {
+  0%,
+  28.07% {
+    transform: translateY(0);
+  }
+  33.33%,
+  61.4% {
+    transform: translateY(-25%);
+  }
+  66.67%,
+  94.74% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(-75%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sector-track {
+    animation: none;
+  }
 }
 /* Projects drift down into place on load (previously a GSAP tween). */
 @keyframes project-settle {
