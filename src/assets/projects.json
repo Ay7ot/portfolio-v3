@@ -48,6 +48,18 @@
     "mobileimg": "/img/ampli-fi-mobile.webp"
   },
   {
+    "name": "Peoplora",
+    "type": "Saas Tool",
+    "sector": "HR Tech",
+    "year": "2026",
+    "category": "shipped",
+    "description": "An all-in-one HR platform for growing teams, with a web app and iOS and Android apps, all of which I designed and built. Peoplora covers the whole employee lifecycle from onboarding to exit: attendance with clock in and out, leave, payroll and payslips, performance, team messaging and Kanban projects. An AI-powered knowledge base answers employee questions straight from the company's own policies and documents.",
+    "github": "",
+    "live": "https://peoplora.com",
+    "deskimg": "/img/peoplora-desktop.webp",
+    "mobileimg": "/img/peoplora-mobile.webp"
+  },
+  {
     "name": "UrGadget",
     "type": "PWA",
     "sector": "Retail",
