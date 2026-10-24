@@ -108,7 +108,7 @@ const HTML = `<!DOCTYPE html>
       <span class="pill"><span class="dot"></span>4+ years shipping production systems</span>
       <h1>Technical Lead<br /><span class="grad">&amp; Software Architect</span></h1>
       <div class="rule"></div>
-      <p class="tag">I architect and ship software <b>end to end</b>: AI/ML systems and multi-portal platforms across <b>healthtech, AI, and sales products</b>.</p>
+      <p class="tag">I architect and ship software <b>end to end</b>: machine learning, data pipelines and multi-portal platforms across <b>health-tech, AI/ML, and sales products</b>.</p>
     </div>
 
     <div class="bottom">
