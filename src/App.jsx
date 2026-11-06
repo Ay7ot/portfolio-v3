@@ -3,7 +3,6 @@ import About from "./components/About";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
 import TabBar from "./components/TabBar";
-import "./animate-wobble.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

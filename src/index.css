@@ -393,3 +393,50 @@ body {
 .project {
   animation: project-settle 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
+/* Tiny neural net in the about section (src/components/TinyNet.jsx). */
+.tiny-net {
+  --net-wire: #dcdfea;
+  --net-node: #ffffff;
+  --net-node-ring: #b9c0d4;
+  --net-hot: #0067c2;
+}
+.dark .tiny-net {
+  --net-wire: rgba(255, 255, 255, 0.12);
+  --net-node: #1c1c1c;
+  --net-node-ring: rgba(255, 255, 255, 0.28);
+  --net-hot: #5cb2ff;
+}
+.tiny-net-edge {
+  stroke: var(--net-wire);
+  stroke-width: 1;
+}
+.tiny-net-signal {
+  stroke: var(--net-hot);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: tiny-net-draw 0.26s ease-out forwards;
+}
+.tiny-net-node {
+  fill: var(--net-node);
+  stroke: var(--net-node-ring);
+  stroke-width: 1.5;
+  transition: r 0.2s ease-out, fill 0.2s ease-out, stroke 0.2s ease-out;
+}
+.tiny-net-node.is-lit {
+  fill: var(--net-hot);
+  stroke: var(--net-hot);
+}
+@keyframes tiny-net-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tiny-net-signal {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}

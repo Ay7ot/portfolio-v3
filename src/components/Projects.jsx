@@ -22,7 +22,7 @@ export default function Projects() {
 
   return (
     <section className="w-full bg-solid" id="projectsBody">
-      <div className="max-w-[1280px] mx-auto px-3 sm:px-6 pt-[4rem] md:pt-[8rem]">
+      <div className="max-w-[1280px] mx-auto px-3 sm:px-6 pt-[4rem] pb-16 md:pt-[8rem] md:pb-8">
       <h2
         data-aos="fade-in"
         data-aos-duration="1000"
@@ -80,8 +80,13 @@ export default function Projects() {
                 !showMore && index >= 5 ? "hidden" : ""
               } project`}
             >
+              {/* The mockup group takes all space beside the fixed-width card,
+                  and the phone column is exactly as wide as the phone, so the
+                  desktop shot fills the rest. Before, the phone column was a
+                  flex ratio wider than its capped image, which left a gap that
+                  moved sides when rows alternated and made some rows wider. */}
               <div
-                className={`flex items-center gap-3 ${
+                className={`flex items-center gap-3 md:flex-1 md:min-w-0 ${
                   index === 0
                     ? ""
                     : index % 2 !== 0
@@ -90,7 +95,7 @@ export default function Projects() {
                 }`}
               >
                 <div
-                  className={`flex-1 md:h-[400px] h-[250px] rounded-lg md:rounded-[1.75rem] relative`}
+                  className={`flex-1 min-w-0 md:h-[400px] h-[250px] rounded-lg md:rounded-[1.75rem] relative`}
                 >
                   <img
                     src={project.deskimg}
@@ -106,7 +111,7 @@ export default function Projects() {
                 </div>
                 {project.mobileimg && (
                   <div
-                    className={`flex-[0.5] md:flex-[0.45] md:h-[400px] h-[250px] rounded-lg md:rounded-[1.75rem] relative`}
+                    className={`shrink-0 w-[31%] max-w-[200px] md:h-[400px] h-[250px] rounded-lg md:rounded-[1.75rem] relative`}
                   >
                     <img
                       src={project.mobileimg}
@@ -115,12 +120,12 @@ export default function Projects() {
                       loading="lazy"
                       decoding="async"
                       alt={`Mobile screenshot of the ${project.name} ${project.type} project`}
-                      className="h-full object-cover w-full rounded-lg md:rounded-[1.5rem] max-w-[200px]"
+                      className="h-full object-cover w-full rounded-lg md:rounded-[1.5rem]"
                     />
                   </div>
                 )}
               </div>
-              <div className="md:w-[400px] md:h-[400px] pt-5 pb-3 px-3 flex flex-col items-start mt-auto h-full gap-4 rounded-[20px] border-[1px] border-standard bg-glass-strong">
+              <div className="md:w-[340px] lg:w-[400px] md:shrink-0 md:h-[400px] pt-5 pb-3 px-3 flex flex-col items-start mt-auto h-full gap-4 rounded-[20px] border-[1px] border-standard bg-glass-strong">
                 <div className="flex flex-col w-full gap-4">
                   <div className="flex flex-col gap-[6px]">
                     <h3 className="text-[1.5rem] font-medium leading-8 text-primary lg:text-[1.875rem]">
