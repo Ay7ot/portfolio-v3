@@ -132,30 +132,6 @@
     "mobileimg": "/img/solxlog-mobile.webp"
   },
   {
-    "name": "Envsane",
-    "type": "CLI Tool",
-    "sector": "Developer Tool",
-    "year": "2026",
-    "category": "shipped",
-    "description": "A lightweight CLI tool for validating and comparing environment files. Catch missing variables, empty values, case mismatches, and duplicates before deployment. Configuration-free and language-agnostic.",
-    "github": "https://github.com/Ay7ot/envsane",
-    "live": "https://envsane.online",
-    "deskimg": "/img/envsane-desktop.webp",
-    "mobileimg": "/img/envsane-mobile.webp"
-  },
-  {
-    "name": "Dotzee",
-    "type": "Developer Tool",
-    "sector": "Engineering",
-    "year": "2025",
-    "category": "shipped",
-    "description": "Intuitive State Management for React. A Pinia-inspired state management solution combining Vue's reactivity system with React's component model for intuitive, type-safe state management.",
-    "github": "https://github.com/Ayatpunch/dotzee",
-    "live": "https://dotzee.vercel.app/",
-    "deskimg": "/img/dotzee-desktop.webp",
-    "mobileimg": "/img/dotzee-mobile.webp"
-  },
-  {
     "name": "Seams & Status",
     "type": "Saas Tool",
     "sector": "Fashion",
@@ -202,6 +178,30 @@
     "live": "",
     "deskimg": "/img/outreach-agent-desktop.webp",
     "mobileimg": "/img/outreach-agent-mobile.webp"
+  },
+  {
+    "name": "Dotzee",
+    "type": "Developer Tool",
+    "sector": "Engineering",
+    "year": "2025",
+    "category": "playground",
+    "description": "Intuitive State Management for React. A Pinia-inspired state management solution combining Vue's reactivity system with React's component model for intuitive, type-safe state management.",
+    "github": "https://github.com/Ayatpunch/dotzee",
+    "live": "https://dotzee.vercel.app/",
+    "deskimg": "/img/dotzee-desktop.webp",
+    "mobileimg": "/img/dotzee-mobile.webp"
+  },
+  {
+    "name": "Envsane",
+    "type": "CLI Tool",
+    "sector": "Developer Tool",
+    "year": "2026",
+    "category": "playground",
+    "description": "A lightweight CLI tool for validating and comparing environment files. Catch missing variables, empty values, case mismatches, and duplicates before deployment. Configuration-free and language-agnostic.",
+    "github": "https://github.com/Ay7ot/envsane",
+    "live": "https://envsane.online",
+    "deskimg": "/img/envsane-desktop.webp",
+    "mobileimg": "/img/envsane-mobile.webp"
   },
   {
     "name": "GreenGrow",
