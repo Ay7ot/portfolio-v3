@@ -55,7 +55,7 @@ export default function About() {
           and let&apos;s start a conversation.
         </p>
         <Contact />
-        <div className="md:border-none w-full mt-16 md:mt-24 flex items-center justify-center rounded-xl py-5">
+        <div className="md:border-none w-full mt-32 flex items-center justify-center rounded-xl py-5">
           <a
             href="https://twitter.com/its_thepoe"
             target="_blank"
