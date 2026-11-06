@@ -120,30 +120,6 @@
     "mobileimg": "/img/snapbounty-mobile.webp"
   },
   {
-    "name": "Solxlog",
-    "type": "Web App",
-    "sector": "Blockchain",
-    "year": "2026",
-    "category": "shipped",
-    "description": "A blockchain transaction logging and monitoring platform for Solana. Track, analyze, and visualize on-chain activities with real-time data and intuitive insights.",
-    "github": "https://github.com/Ay7ot/solxlog",
-    "live": "https://solxlog.live",
-    "deskimg": "/img/solxlog-desktop.webp",
-    "mobileimg": "/img/solxlog-mobile.webp"
-  },
-  {
-    "name": "Seams & Status",
-    "type": "Saas Tool",
-    "sector": "Fashion",
-    "year": "2025",
-    "category": "shipped",
-    "description": "A smart invoicing solution built for Africa's growing freelance community. Our platform helps freelancers create professional invoices, streamline payment collection, and maintain clear payment records. Designed with simplicity in mind, Invoyce makes financial management effortless for freelancers across Africa and beyond.",
-    "github": "https://github.com/Ay7ot/seams-and-status",
-    "live": "https://seams-and-status.xyz/",
-    "deskimg": "/img/invoyce-desktop.webp",
-    "mobileimg": "/img/invoyce-mobile.webp"
-  },
-  {
     "name": "GasTracka",
     "type": "PWA",
     "sector": "Blockchain",
@@ -204,40 +180,28 @@
     "mobileimg": "/img/envsane-mobile.webp"
   },
   {
-    "name": "GreenGrow",
-    "type": "Website",
-    "sector": "Agriculture",
-    "year": "2025",
+    "name": "Solxlog",
+    "type": "Web App",
+    "sector": "Blockchain",
+    "year": "2026",
     "category": "playground",
-    "description": "Smart Farming Solutions for a Sustainable Future. Revolutionize your agricultural practices with IoT sensors and data analytics that increase yields while reducing resource consumption.",
-    "github": "https://github.com/Ay7ot",
-    "live": "https://greengrow.netlify.app/",
-    "deskimg": "/img/greengrow-desktop.webp",
-    "mobileimg": "/img/greengrow-mobile.webp"
+    "description": "A blockchain transaction logging and monitoring platform for Solana. Track, analyze, and visualize on-chain activities with real-time data and intuitive insights.",
+    "github": "https://github.com/Ay7ot/solxlog",
+    "live": "https://solxlog.live",
+    "deskimg": "/img/solxlog-desktop.webp",
+    "mobileimg": "/img/solxlog-mobile.webp"
   },
   {
-    "name": "ShopWithSteeze",
-    "type": "Web store",
-    "sector": "E-Commerce",
-    "year": "2023",
-    "category": "shipped",
-    "description": "Shop with Steeze, where sophistication meets style. Discover our exquisite collection of men's jewelry, meticulously crafted to elevate your everyday look. ",
-    "github": "https://github.com/Ay7ot/ShopWithSteeze",
-    "live": "https://shopwithsteeze.web.app/",
-    "deskimg": "/img/steeze-desktop.webp",
-    "mobileimg": "/img/steeze-mobile.webp"
-  },
-  {
-    "name": "10k MRR",
-    "type": "Website",
-    "sector": "Dashboard",
-    "year": "2025",
+    "name": "Know Your Ballot",
+    "type": "Web App",
+    "sector": "Civic Tech",
+    "year": "2026",
     "category": "playground",
-    "description": "A one-page dashboard for a SaaS product that allows showcase their product and track their revenue, customers, and other metrics.",
-    "github": "https://github.com/Ay7ot",
-    "live": "https://10k-mrr.netlify.app/",
-    "deskimg": "/img/mrr-desktop.webp",
-    "mobileimg": "/img/mrr-mobile.webp"
+    "description": "A voter guide for Nigeria's 2027 general election. Enter a polling unit code, ward, LGA or just share your location, and it shows every candidate on your ballot from President down to State Assembly, taken from INEC's official lists for all 36 states and the FCT. A daily job fetches and parses INEC's published PDFs, and corrections come in as GitHub issues that a person reviews.",
+    "github": "https://github.com/Ay7ot/knowyourballot-ng",
+    "live": "https://knowyourballot-ng.vercel.app",
+    "deskimg": "/img/knowyourballot-desktop.webp",
+    "mobileimg": "/img/knowyourballot-mobile.webp"
   },
   {
     "name": "Trivia",
