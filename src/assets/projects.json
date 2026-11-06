@@ -36,6 +36,18 @@
     "mobileimg": "/img/construction-check-mobile.webp"
   },
   {
+    "name": "Tinyflame",
+    "type": "PWA",
+    "sector": "Health-Tech",
+    "year": "2026",
+    "category": "shipped",
+    "description": "A focus app for ADHD brains, built for the moment when you know what to do and still can't start. Tinyflame turns an overwhelming task into one tiny next step, runs a 10, 25 or 45 minute focus timer with you, and sends a gentle reminder at the time you choose. It adds notes, streaks, focus sounds and a moderated community, installs to the home screen with push nudges, and runs on a free core with a paid Pro plan.",
+    "github": "",
+    "live": "https://tinyflame.app",
+    "deskimg": "/img/tinyflame-desktop.webp",
+    "mobileimg": "/img/tinyflame-mobile.webp"
+  },
+  {
     "name": "Ampli-fi",
     "type": "Saas Tool",
     "sector": "Fintech",
