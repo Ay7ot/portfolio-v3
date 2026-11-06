@@ -6,7 +6,7 @@ export default function About() {
     <section className="w-full bg-main" id="about">
       <div className="max-w-[1280px] mx-auto px-3 sm:px-6 pt-[2rem] pb-[6rem] md:pt-[4rem] md:pb-[8rem]">
       <div className=" flex md:flex-row flex-col gap-4 md:gap-16 items-center w-full">
-        <div className="self-center relative">
+        <div className="self-center relative w-full md:w-[46%] md:shrink-0">
           <TinyNet />
         </div>
         <div>
@@ -55,7 +55,7 @@ export default function About() {
           and let&apos;s start a conversation.
         </p>
         <Contact />
-        <div className="md:border-none w-full mt-16 md:mt-24 flex items-center justify-center rounded-xl py-5">
+        <div className="md:border-none w-full mt-32 flex items-center justify-center rounded-xl py-5">
           <a
             href="https://twitter.com/its_thepoe"
             target="_blank"
