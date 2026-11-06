@@ -83,7 +83,7 @@ export default function Contact() {
               className={`${s.color} rounded-[12px] px-3 py-1 flex items-center justify-center gap-2 transition-transform duration-200 ease-out hover:-translate-y-[2px]`}
             >
               {s.icon}
-              <span className="text-white font-bold text-[1.125rem] md:text-[1.25rem] leading-8 whitespace-nowrap">
+              <span className="text-white font-bold text-[1.25rem] leading-8 whitespace-nowrap">
                 {s.label}
               </span>
             </a>
