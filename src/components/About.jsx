@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AnimationOnScroll } from "react-animation-on-scroll";
+import TinyNet from "./TinyNet";
 
 export default function About() {
   const [copied, setCopied] = useState(false);
@@ -18,36 +18,7 @@ export default function About() {
       <div className="max-w-[1280px] mx-auto px-3 sm:px-6 pt-[2rem] pb-[6rem] md:pt-[4rem] md:pb-[8rem]">
       <div className=" flex md:flex-row flex-col gap-4 md:gap-16 items-center w-full">
         <div className="self-center relative">
-          <AnimationOnScroll animateIn="animate__wobble" duration={2}>
-            <div className="w-[250px] md:w-[300px] border-standard border-[1px] rounded-[1.25rem]">
-              <img
-                src="/ayomide.jpg"
-                width="346"
-                height="346"
-                loading="lazy"
-                decoding="async"
-                alt="A photo of Ayomide Ibiteye, Technical Lead and Software Architect"
-                className="w-full rounded-t-[1.25rem]"
-              />
-              <div className="bg-solid p-4 rounded-b-[1.25rem]">
-                <p className="font-shadows text-center text-primary">
-                  Ayomide Ibiteye, Technical Lead and Software Architect
-                </p>
-              </div>
-            </div>
-          </AnimationOnScroll>
-          {/* <div className="w-[200px] min-[380px]:w-[280px]">
-                    <img src="/ayomide.jpg" className="w-full rounded-t-[1.25rem]" />
-                    <div className="bg-white p-4 rounded-b-[1.25rem]">
-                        <p className="font-shadows text-center">This is what I look like currently, selfies are not my thing but I try</p>
-                    </div>
-                </div>
-                <div className="w-[200px] min-[380px]:w-[280px]">
-                    <img src="/ayomide.jpg" className="w-full rounded-t-[1.25rem]" />
-                    <div className="bg-white p-4 rounded-b-[1.25rem]">
-                        <p className="font-shadows text-center">This is what I look like currently, selfies are not my thing but I try</p>
-                    </div>
-                </div> */}
+          <TinyNet />
         </div>
         <div>
           <p className="flex flex-col gap-[1.25rem] text-[18px] md:text-[1.25rem] leading-[1.75rem] text-muted md:gap-8 font-medium">
@@ -58,7 +29,7 @@ export default function About() {
             <span>
               I design and ship production systems end to end, from machine
               learning and data pipelines to multi-portal platforms for
-              health-tech, AI/ML, and sales products, built on Next.js,
+              Health-Tech, AI/ML, and sales products, built on Next.js,
               TypeScript, Node.js, and Python.
             </span>
             <span>
