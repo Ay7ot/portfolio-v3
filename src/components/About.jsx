@@ -1,18 +1,7 @@
-import { useState } from "react";
+import Contact from "./Contact";
 import TinyNet from "./TinyNet";
 
 export default function About() {
-  const [copied, setCopied] = useState(false);
-
-  function copyEmail() {
-    navigator.clipboard.writeText("ayomidotzee@gmail.com");
-    setCopied(true);
-
-    setTimeout(() => {
-      setCopied(false);
-    }, 4000);
-  }
-
   return (
     <section className="w-full bg-main" id="about">
       <div className="max-w-[1280px] mx-auto px-3 sm:px-6 pt-[2rem] pb-[6rem] md:pt-[4rem] md:pb-[8rem]">
@@ -65,55 +54,8 @@ export default function About() {
           Got a question, project idea, or just want to talk? <br /> Reach out
           and let&apos;s start a conversation.
         </p>
-        <div className="mt-6 w-fit">
-          <div className="relative bg-glass-strong border border-standard rounded-xl flex items-center gap-4 p-2 pl-4">
-            <a
-              href="mailto:ayomidotzee@gmail.com"
-              className="text-muted text-sm md:text-base font-medium hover:underline transition-all duration-200 ease"
-            >
-              ayomidotzee@gmail.com
-            </a>
-            <button
-              onClick={copyEmail}
-              className="flex items-center gap-2 py-2 px-3 rounded-lg border border-standard bg-solid text-sm font-medium text-muted transition-colors duration-200 ease hover:text-primary"
-            >
-              {copied ? (
-                <>
-                  <svg
-                    className="w-4 h-4 text-accent-light"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                  </svg>
-                  <span className="text-accent-light">Copied</span>
-                </>
-              ) : (
-                <>
-                  <svg
-                    className="w-4 h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9.75a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184"
-                    />
-                  </svg>
-                  <span>Copy</span>
-                </>
-              )}
-            </button>
-          </div>
-        </div>
-        <div className="md:border-none w-full mt-32 flex items-center justify-center rounded-xl py-5">
+        <Contact />
+        <div className="md:border-none w-full mt-16 md:mt-24 flex items-center justify-center rounded-xl py-5">
           <a
             href="https://twitter.com/its_thepoe"
             target="_blank"
