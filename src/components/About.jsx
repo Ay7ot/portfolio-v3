@@ -6,7 +6,7 @@ export default function About() {
     <section className="w-full bg-main" id="about">
       <div className="max-w-[1280px] mx-auto px-3 sm:px-6 pt-[2rem] pb-[6rem] md:pt-[4rem] md:pb-[8rem]">
       <div className=" flex md:flex-row flex-col gap-4 md:gap-16 items-center w-full">
-        <div className="self-center relative">
+        <div className="self-center relative w-full md:w-[46%] md:shrink-0">
           <TinyNet />
         </div>
         <div>

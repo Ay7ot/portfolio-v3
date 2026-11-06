@@ -338,9 +338,11 @@ body {
   justify-content: center;
 }
 
-/* Sector ticker under the headline: each slide holds for 1.6s, then the
-   track slides up over 0.3s. The fourth slide repeats the first, so jumping
-   back to 0 at the end of the loop is invisible. */
+/* Industry ticker under the headline (list in components/industries.jsx):
+   each slide holds for 1.6s, then the track slides up over 0.3s. The last
+   slide repeats the first, so jumping back to 0 at the end of the loop is
+   invisible. Adding an industry means regenerating these stops: hold k runs
+   from k*1.9s to k*1.9s+1.6s and moves the track up by k/(N+1). */
 .sector-ticker {
   display: block;
   height: 70px;
@@ -349,7 +351,7 @@ body {
 .sector-track {
   display: flex;
   flex-direction: column;
-  animation: sector-cycle 5.7s infinite;
+  animation: sector-cycle 15.2s infinite;
 }
 .sector-slide {
   height: 70px;
@@ -363,19 +365,39 @@ body {
 }
 @keyframes sector-cycle {
   0%,
-  28.07% {
+  10.53% {
     transform: translateY(0);
   }
-  33.33%,
-  61.4% {
-    transform: translateY(-25%);
+  12.50%,
+  23.03% {
+    transform: translateY(-11.1111%);
   }
-  66.67%,
-  94.74% {
-    transform: translateY(-50%);
+  25.00%,
+  35.53% {
+    transform: translateY(-22.2222%);
+  }
+  37.50%,
+  48.03% {
+    transform: translateY(-33.3333%);
+  }
+  50.00%,
+  60.53% {
+    transform: translateY(-44.4444%);
+  }
+  62.50%,
+  73.03% {
+    transform: translateY(-55.5556%);
+  }
+  75.00%,
+  85.53% {
+    transform: translateY(-66.6667%);
+  }
+  87.50%,
+  98.03% {
+    transform: translateY(-77.7778%);
   }
   100% {
-    transform: translateY(-75%);
+    transform: translateY(-88.8889%);
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -399,13 +421,11 @@ body {
   --net-wire: #dcdfea;
   --net-node: #ffffff;
   --net-node-ring: #b9c0d4;
-  --net-hot: #0067c2;
 }
 .dark .tiny-net {
   --net-wire: rgba(255, 255, 255, 0.12);
   --net-node: #1c1c1c;
   --net-node-ring: rgba(255, 255, 255, 0.28);
-  --net-hot: #72bcfd;
 }
 .tiny-net-edge {
   stroke: var(--net-wire);
@@ -428,6 +448,14 @@ body {
 .tiny-net-node.is-lit {
   fill: var(--net-hot);
   stroke: var(--net-hot);
+}
+.tiny-net-node.is-output {
+  fill: var(--node-color);
+  stroke: var(--node-color);
+  fill-opacity: 0.25;
+}
+.tiny-net-node.is-output.is-lit {
+  fill-opacity: 1;
 }
 @keyframes tiny-net-draw {
   to {
